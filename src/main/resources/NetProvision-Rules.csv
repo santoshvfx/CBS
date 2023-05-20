@@ -1,0 +1,254 @@
+#NetProvision Error Code,Error Description,BIS Error Code,BIS Error Description,Origin,sevirity,business rule,BIS Error Name
+10033,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+17818,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+17819,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+17820,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+17821,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+17822,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+17823,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+17828,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+17829,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+65017,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_EXCEPTION
+65019,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_EXCEPTION
+65800,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+107025,null,RM-NotImplemented-00082,Feature not supported.,NetProvision,0,0,ERR_RM_NET_PROVISION_NOT_IMPLEMENTED
+107200,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_EXCEPTION
+107201,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+122000,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+122008,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+133104,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+133105,null,RM-NotImplemented-00082,Feature not supported.,NetProvision,0,0,ERR_RM_NET_PROVISION_NOT_IMPLEMENTED
+133108,null,RM-NotImplemented-00082,Feature not supported.,NetProvision,0,0,ERR_RM_NET_PROVISION_NOT_IMPLEMENTED
+133110,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+133114,null,RM-NotImplemented-00082,Feature not supported.,NetProvision,0,0,ERR_RM_NET_PROVISION_NOT_IMPLEMENTED
+133115,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+133116,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+133118,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+133119,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+133120,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+133121,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+133122,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+133125,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+133127,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+136002,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+136003,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+136004,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+136005,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+136006,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+136007,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+136008,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+136009,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+136010,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+136012,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+136013,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+136017,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+136022,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+136024,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+136025,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+146514,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+146515,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+146516,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+146517,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+146705,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+146714,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+146715,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+146716,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+151303,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+151450,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+151451,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+151505,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+198005,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+198010,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+198040,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+198071,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198072,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198077,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198078,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198079,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198080,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198100,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198134,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198138,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+198142,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198143,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198144,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198617,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198618,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198619,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198621,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_EXCEPTION
+198627,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+198681,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+198683,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198684,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+198688,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+199215,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+199217,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+199218,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+199228,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+205002,null,RM-NotImplemented-00082,Feature not supported.,NetProvision,0,0,ERR_RM_NET_PROVISION_NOT_IMPLEMENTED
+205003,null,RM-NotImplemented-00082,Feature not supported.,NetProvision,0,0,ERR_RM_NET_PROVISION_NOT_IMPLEMENTED
+205007,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+205009,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+205016,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+205017,null,RM-NotImplemented-00082,Feature not supported.,NetProvision,0,0,ERR_RM_NET_PROVISION_NOT_IMPLEMENTED
+205018,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+205026,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+205027,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+205028,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+211216,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211220,null,RM-BusinessViolation-01976,BusinessViolation- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211230,null,RM-AccessDenied-01977,AccessDenied - Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_ACCESS_DENIED
+211231,null,RM-ObjectNotFound-01974,Couldn’t find the requested object- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+211234,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211235,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211236,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211238,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211239,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211240,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211241,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211242,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211243,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211244,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211245,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211246,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211247,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211248,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211249,null,RM-DataNotFound-01973,Couldn't find data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_DATA_NOT_FOUND
+211250,null,RM-DataNotFound-01973,Couldn't find data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_DATA_NOT_FOUND
+211251,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211253,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211255,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211256,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211257,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211258,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211259,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211263,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211264,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211265,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211266,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211267,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211268,null,RM-InvalidData-01972,Missing required data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211269,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+211270,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+211271,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211272,null,RM-ObjectNotFound-02192,Couldn’t find the requested object- Exception from NetProvision,NetProvision,0,0,ERR_RM_NO_PORT_AVAILABLE
+211273,null,RM-ObjectNotFound-01974,Couldn’t find the requested object- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+211274,null,RM-ObjectNotFound-01974,Couldn’t find the requested object- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+211275,null,RM-ObjectNotFound-01974,Couldn’t find the requested object- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+211500,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211501,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211502,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211503,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211504,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211505,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211506,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211509,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211510,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211511,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211512,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211515,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211516,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211517,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211518,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211519,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211520,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211521,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211524,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211528,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211529,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211530,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211531,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211532,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211534,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211535,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211536,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211600,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211601,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211602,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211603,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211604,null,RM-ObjectNotFound-01974,Couldn’t find the requested object- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+211605,null,RM-DataNotFound-01973,Couldn't find data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_DATA_NOT_FOUND
+211606,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211607,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211608,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211609,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211610,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211613,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211614,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211615,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+211616,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211700,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211701,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211702,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+211723,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211760,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211761,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211762,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211763,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211764,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211765,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211769,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+211770,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,1,1,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211771,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211772,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211773,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211774,null,RM-DataNotFound-01973,Couldn't find data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_DATA_NOT_FOUND
+211775,null,RM-DataNotFound-01973,Couldn't find data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_DATA_NOT_FOUND
+211782,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211783,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211784,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211785,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211788,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211790,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211792,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+211793,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211794,null,RM-DataNotFound-01973,Couldn't find data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_DATA_NOT_FOUND
+211795,null,RM-DataNotFound-01973,Couldn't find data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_DATA_NOT_FOUND
+211796,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211797,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211798,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211799,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211801,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+211805,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211807,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211808,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211810,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211812,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211813,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+211816,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211817,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211819,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211820,null,RM-BusinessViolation-01976,BusinessViolation-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_BUSINESS_VIOLATION
+211821,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND,,,,,,
+211822,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA,,,,,,
+212000,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+212100,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+212102,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+212204,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+212402,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+214201,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+214202,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+214203,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+214204,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+214205,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+214206,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+214207,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+214208,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+214209,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND
+214211,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+215001,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+215002,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA
+215004,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND,,,,
+215007,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA,,,,
+238000,null,RM-InvalidData-01972,citrix,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA,,,,
+238006,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA,,,,
+238007,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA,,,,
+238017,null,RM-InvalidData-01972,Missing required data- Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_MISSING_DATA,,,,
+238029,null,RM-ObjectNotFound-01974,Couldn’t find the requested object-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND,,,,
+JAXB-99999,null,RM-SystemFailure-03530,System Failure- Encoder exception,RM BIS,0,0,ERR_RM_CREATE_EMBUS_SERVICE_REQUEST,,,,
+DEFAULT:1,null,RM-SystemFailure-01975,Error in NetProvision Service access,NetProvision,0,0,ERR_RM_NET_PROVISION_EXCEPTION,,,,
+DEFAULT:2,null,RM-SystemFailure-01975,Error in NetProvision Service access,NetProvision,0,0,ERR_RM_NET_PROVISION_EXCEPTION,,,,
+null,attribute name not found in class SZ5Exchange,RM-InvalidData-01972,Invalid Data-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_OBJECT_NOT_FOUND,,,,
+null,[Tt][Ii][Mm][Ee][Dd]*[ ]*[Oo][Uu][Tt],RM-SystemFailure-00001,Timeout-Exception from NetProvision,NetProvision,0,0,ERR_RM_TIMEOUT,,,,
+null,[Nn][Oo][Tt][Ss][Tt][Aa][Rr][Tt][Ee][Dd],RM-SystemFailure-01975,NotStarted is not a valid response for single request-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_EXCEPTION,,,,
+null,null,RM-SystemFailure-01975,System Failure-Exception from NetProvision,NetProvision,0,0,ERR_RM_NET_PROVISION_EXCEPTION,,,, 

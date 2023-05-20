@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?> 
+<m1:OpIdl3_3Client.OrderPathSubscriptionNotifications.NotifySvActivate xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:m1="http://www.evolving.com/OrderPath/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<regID>0000</regID>
+	<initSpid>SP25</initSpid> 
+	<tnRng> 
+    	<tnValue>4334330031</tnValue> 
+   		<endStation></endStation> 
+	</tnRng> 
+	<vectSvID> 
+     	<item>1903</item> 
+	</vectSvID> 
+	<subVerState>Active</subVerState> 
+	<orderNum> 
+    	<ordTyp>1</ordTyp> 
+    	<serNum>555555555555555</serNum> 
+    	<supNum>1</supNum> 
+	</orderNum> 
+</m1:OpIdl3_3Client.OrderPathSubscriptionNotifications.NotifySvActivate>

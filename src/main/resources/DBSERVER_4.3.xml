@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<vicuna>
+	<propertyList>
+		<DBSERVER>
+			<directory>
+				<search>
+					<service VALUE="C=US,O=PB,OU=OSSGW,CN=DBServer" TYPE="STRING" COMMENT="Service Name"/>
+					<version VALUE="4.3" TYPE="STRING" COMMENT="DBServer Version Number"/>
+				</search>
+				<selection>
+					<cacheDuration VALUE="3600" TYPE="USHORT" COMMENT="Time Between Directory Cache Refreshes (in Seconds)"/>
+				</selection>
+			</directory>
+		</DBSERVER>
+		<EventList>
+			<commHandle>
+				<protocol>
+					<profile>
+						<events>
+							<GET_NXX_2_HOST_BY_TN_REQ>
+								<__id VALUE="3120" TYPE="LONG" COMMENT="DBServer GetNxx2Host by TN"/>
+								<GET_NXX_2_HOST_LIST_RESP>
+									<__id VALUE="3129" TYPE="LONG" COMMENT="SWITCH NXX2Host Lis Response"/>
+								</GET_NXX_2_HOST_LIST_RESP>
+								<NO_DATA_RESP>
+									<__id VALUE="3099" TYPE="LONG" COMMENT="No Data Found"/>
+								</NO_DATA_RESP>
+								<EXCEPTION>
+									<__id VALUE="9999" TYPE="LONG" COMMENT="Exception"/>
+								</EXCEPTION>
+							</GET_NXX_2_HOST_BY_TN_REQ>
+						</events>
+						<svcData>
+							<responseTimeToWait VALUE="8000" TYPE="LONG"/>
+						</svcData>
+					</profile>
+				</protocol>
+			</commHandle>
+		</EventList>
+		<accept>
+			<stream>
+				<MTCPDriver>
+					<Attach VALUE="" TYPE="STRING"/>
+				</MTCPDriver>
+			</stream>
+			<protocol>
+				<name VALUE="DG3X" TYPE="STRING"/>
+			</protocol>
+		</accept>
+		<listen>
+			<transport VALUE="MTCPAcceptor" TYPE="STRING"/>
+			<stream>
+				<MTCPAcceptor>
+					<Listen>
+						<LocalAddress VALUE="127.0.0.1:80" TYPE="STRING"/>
+						<Family VALUE="2" TYPE="LONG"/>
+					</Listen>
+				</MTCPAcceptor>
+			</stream>
+			<protocol>
+				<name VALUE="DG3X" TYPE="STRING"/>
+			</protocol>
+		</listen>
+	</propertyList>
+</vicuna>

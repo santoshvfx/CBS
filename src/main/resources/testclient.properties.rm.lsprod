@@ -1,0 +1,133 @@
+# @(#)testclient.properties	1.0 00/05/17
+
+#
+# Logger-specific properties follow
+#
+CLASSNAME=com.sbc.eia.bis.facades.testing.rm
+LOGFILE_PATH=RMClient.lsprod.log
+
+#BIS Provider URL
+BIS_PROVIDER_URL=corbaloc::bislsprod1.it.att.com:11000
+
+BIS_HOME=cell/clusters/RM21.60Cluster/RMHome-21.60
+
+# Test Type
+#TARGET_TYPE=OBJECT
+TARGET_TYPE=EJB
+#TARGET_TYPE=PROXY
+#TARGET_TYPE=SOAP
+#TARGET_TYPE=SOAPHTTP
+#TARGET_TYPE=MDB
+#TARGET_TYPE=JMX
+
+THREAD_COUNT=1
+CYCLE_COUNT=1
+SLEEP_TIME=0
+
+# for OBJECT
+BIS_PROPERTIES_PATH=c:\\appl\\eia\\rm\\properties\\rm.properties
+
+# for Vicuna
+# Vicuna Home
+VICUNA_SERVICE_CONFIG_DIR=c:\\appl\\eia\\rm\\properties
+VICUNA_XML_FILE=c:\\vicuna\\etc\\vicunalite.xml
+# Vicuna services APPLDATA
+APPLDATA=
+GWSVCS_CLNTUUID=RMBIS
+
+#RM PROXY APPLDATA
+RMPROXY_APPLDATA=PROD
+
+#MDB Test client properties
+RM_MDB_TEST_CLIENT_CONFIG_FILE_NAME=MDBTestClient.properties
+
+#
+#RMSoacQueue embus service wrapper properties
+#
+RM_TEST_CLIENT_CONFIG_FILE_NAME=test-client-config.xml
+RM_TEST_ENVIRONMENT_NAME=RM_TEST_SOAC
+OSS_PUBLIC_KEY=bossApplData1
+
+# SOAFI PROXY properties
+SOAFI_LDAP=ldap://emlprd01.sbc.com:4299/t=jms,c=us
+USER_NAME=M18846p
+PASSWORD=VVADt>8\u0008/\u0002E+\u007F/\u0005"N
+CONNECTION_FACTORY=cn=ls_rmprdQCF,ou=21_60,ou=rm,o=bis
+REQUESET_QUEUE=cn=resourceManagement,ou=21_60,ou=rm,o=bis
+#REPLY_TO_QUEUE=temp
+#WAIT_TIME=120000
+
+# SOAP/HTTP
+LOGGING_KEY=SM-NONE
+SERVICE_LOCATOR=http://mwsoapproxynon271prod.sbc.com/Rm21.60SoapHttpWeb/servlet/SoapAdapterServlet
+
+#JMX
+#LOOKUP_TYPE= "cluster" or "server" or "direct"
+#PORT=the value of SOAP_CONNECTOR_ADDRESS
+LOOKUP_TYPE=server
+PORT=8882
+MBEAN_IDENTIFIER=WebSphere:mbeanIdentifier=BISTestMBean,*
+JMX_TIMEOUT=60
+SERVER_NAME=server1
+
+#DTD_URL=http://cscim1.sbc.com/eia/BISFacade/DTD/v1.4/
+
+# BIS_CONTEXT fields
+#BIS_CONTEXT_Application=LSPWEST
+BIS_CONTEXT_Application=00.00
+BIS_CONTEXT_CustomerName=ccma
+BIS_CONTEXT_UserID=sl2917
+BIS_CONTEXT_Password=none_ya
+BIS_CONTEXT_LoggingInformation=huh
+#BIS_CONTEXT_ServiceCenter=IL
+
+#
+# TestCase Information
+# Each test case is specified in the format:
+#	TESTCASEn=TEST_CASE_CLASS_NAME|test-case-specific-pipe-delimited-parameter-list
+# TEST_CASE_COUNT should be the same number as 'n' in TESTCASEn.
+#
+
+TEST_CASE_COUNT=1
+
+#TESTCASE1=PublishRGActivation|XML|PublishRGActivation_01.xml
+
+#TESTCASE1=CreateFacilityAssignment|XML|CreateFacilityAssignment_01.xml
+
+#MDB test cases
+#not workingTESTCASE1=ModifyInventory|XML|ModifyInventory_01.xml
+#TESTCASE1=ModifyFacilityInfo|XML|ModifyFacilityInfo_01.txt
+#TESTCASE1=PublishValidateFacilityNotification|XML|PublishValidateFacilityNotification_01.xml
+#TESTCASE1=PublishFacilityAssignmentOrderNotification2|XML|PublishFacilityAssignmentOrderNotification2_BBNMS_01.txt
+
+#TESTCASE1=CreateFacilityAssignment|XML|CreateFacilityAssignment_01.xml
+
+#TESTCASE1=SelfTest|BisContext||ServiceCenter|CA|CustomerName|7536|Application|RMDEV|EMAIL_RECIPIENT_RMSELFTEST|hw7243@att.com|end|
+
+# SendFacilityAssignmentOrder 
+#---  FTTN / SE / new connect/cancel 
+#TESTCASE1=SendFacilityAssignmentOrder|BisContext|ServiceCenter|MO|CustomerName|CUST|Application|OMS|BusinessUnit|SBCLightSpeed|LoggingInformation|00000|JMSCorrelationId|corrID|JMSReplyToQueue|cn=omsResponseNotification,ou=RM21_30,ou=rm,o=bis,t=jms,c=us|EMBUSMessageTag|embusMsgTag|SOAC_SPECIAL_CONDITIONS_DATA|EV|end|aSOACServiceOrderNumber|C617500L2|aSOACServiceOrderCorrectionSuffix|A|aNetworkType|FTTPIP|aOrderActionId|9258750138|aOrderNumber|9834567890|aOrderActionType|Provide|aCompletionIndicator|false|aSubActionType|Amend|aCircuitId|AA/MCXX/101006//SW|aServiceLocation|FieldedAddress|null|null|null|null|921|null|null|null|RMBIS TR|null|null|SANDY SPRINGS|GA|null|null|null|test1|BLDG|3|FLR|5|APT|1|null|null|null|null|null|null|null|END|PROP|SbcServingOfficeWirecenter|ALPRGAMA|PrimaryNpaNxx|770475|end|aOriginalDueDate|06|12|30|aSubsequentDueDate|null|aApplicationDate|06|01|30|aTDMTelphoneNumber|9258750138|aRelatedServiceOrderNumber|null|aLineShareDisconnectFlag|null|aClassOfService|Residential|aResendFlag|false|aProperties|TelephoneNumber|4797180825|end| 
+#
+#--- FTTP / SW / new connect/cancel 
+#TESTCASE1=SendFacilityAssignmentOrder|BisContext|ServiceCenter|MO|CustomerName|CUST|Application|RMDEV|BusinessUnit|OMS|LoggingInformation|00000|JMSCorrelationId|corrID|JMSReplyToQueue|cn=omsResponseNotification,ou=RM21_30,ou=rm,o=bis,t=jms,c=us|EMBUSMessageTag|embusMsgTag|SOAC_SPECIAL_CONDITIONS_DATA|EV|end|aSOACServiceOrderNumber|C617500L2|aSOACServiceOrderCorrectionSuffix|A|aNetworkType|FTTP|aOrderActionId|9258750138|aOrderNumber|9834567890|aOrderActionType|Provide|aCompletionIndicator|false|aSubActionType|null|aCircuitId|AA/MCXX/101006//SW|aServiceLocation|FieldedAddress|null|null|null|null|43|null|null|null|BIRCH LN|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|END|PROP|SbcServingOfficeWirecenter|dllstxfe|PrimaryNpaNxx|214331|end|aOriginalDueDate|06|12|30|aSubsequentDueDate|null|aApplicationDate|06|01|30|aTDMTelphoneNumber|9258750138|aRelatedServiceOrderNumber|null|aLineShareDisconnectFlag|false|aClassOfService|Residential|aResendFlag|false|aProperties|TelephoneNumber|4797180825|end|
+#
+#--- FTTN /W E S T /new connects/cancel
+#TESTCASE1=SendFacilityAssignmentOrder|BisContext|ServiceCenter|MO|CustomerName|CUST|Application|RMDEV|BusinessUnit|OMS|LoggingInformation|00000|JMSCorrelationId|corrID|JMSReplyToQueue|cn=omsResponseNotification,ou=RM17_0,ou=rm,o=bis,t=jms,c=us|EMBUSMessageTag|embusMsgTag|SOAC_SPECIAL_CONDITIONS_DATA|EV|end|aSOACServiceOrderNumber|C700430L2|aSOACServiceOrderCorrectionSuffix|A|aNetworkType|FTTN|aOrderActionId|5678901234|aOrderNumber|1234567890|aOrderActionType|Provide|aCompletionIndicator|false|aSubActionType|null|aCircuitId|AA/MCXX/101006//SW|aServiceLocation|FieldedAddress|null|null|null|null|43|null|null|null|Birch Ln|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|END|PROP|SbcServingOfficeWirecenter|pcfcca11|PrimaryNpaNxx|650355|end|aOriginalDueDate|06|12|30|aSubsequentDueDate|null|aApplicationDate|06|01|30|aTDMTelphoneNumber|2143310825|aRelatedServiceOrderNumber|null|aLineShareDisconnectFlag|false|aClassOfService|Residential|aResendFlag|false|aProperties|TelephoneNumber|4797180825|end|
+# 
+#--- FTTN /M I D W E S T /new connects/cancel
+#TESTCASE1=SendFacilityAssignmentOrder|BisContext|ServiceCenter|MO|CustomerName|CUST|Application|RMDEV|BusinessUnit|OMS|LoggingInformation|00000|JMSCorrelationId|corrID|JMSReplyToQueue|cn=omsResponseNotification,ou=RM17_0,ou=rm,o=bis,t=jms,c=us|EMBUSMessageTag|embusMsgTag|SOAC_SPECIAL_CONDITIONS_DATA|EV|end|aSOACServiceOrderNumber|C846230L2|aSOACServiceOrderCorrectionSuffix|A|aNetworkType|FTTN|aOrderActionId|5678901234|aOrderNumber|1234567890|aOrderActionType|Provide|aCompletionIndicator|false|aSubActionType|null|aCircuitId|AA/MCXX/101006//SW|aServiceLocation|FieldedAddress|null|null|null|null|4623|null|null|null|LA RUE ST|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|END|PROP|SbcServingOfficeWirecenter|milwwi30|PrimaryNpaNxx|414321|end|aOriginalDueDate|06|12|30|aSubsequentDueDate|null|aApplicationDate|06|01|30|aTDMTelphoneNumber|2143310825|aRelatedServiceOrderNumber|N123456|aLineShareDisconnectFlag|false|aClassOfService|Residential|aResendFlag|false|aProperties|TelephoneNumber|4797180825|end|
+#
+#--- FTTN / E A S T / new connects/cancel
+#TESTCASE1=SendFacilityAssignmentOrder|BisContext|ServiceCenter|MO|CustomerName|CUST|Application|RMDEV|BusinessUnit|OMS|LoggingInformation|00000|JMSCorrelationId|corrID|JMSReplyToQueue|cn=omsResponseNotification,ou=RM17_0,ou=rm,o=bis,t=jms,c=us|EMBUSMessageTag|embusMsgTag|SOAC_SPECIAL_CONDITIONS_DATA|EV|end|aSOACServiceOrderNumber|C901140L2|aSOACServiceOrderCorrectionSuffix|A|aNetworkType|FTTN|aOrderActionId|5678901234|aOrderNumber|1234567890|aOrderActionType|Provide|aCompletionIndicator|false|aSubActionType|null|aCircuitId|AA/MCXX/101006//SW|aServiceLocation|FieldedAddress|null|null|null|null|114|null|null|null|SKYLINE LA|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|END|PROP|SbcServingOfficeWirecenter|smfrct02|PrimaryNpaNxx|203329|end|aOriginalDueDate|06|12|30|aSubsequentDueDate|null|aApplicationDate|06|01|30|aTDMTelphoneNumber|2033291447|aRelatedServiceOrderNumber|null|aLineShareDisconnectFlag|false|aClassOfService|Residential|aResendFlag|false|aProperties|TelephoneNumber|4797180825|end|
+
+#SendFacilityAssignmentOrder2
+#TESTCASE1=SendFacilityAssignmentOrder2|BisContext|ServiceCenter|MO|CustomerName|CUST|Application|BBNMS|BusinessUnit|SBCLightSpeed|LoggingInformation|00000|JMSCorrelationId|corrID|JMSReplyToQueue|cn=omsResponseNotification,ou=RM21_30,ou=rm,o=bis,t=jms,c=us|EMBUSMessageTag|embusMsgTag|SOAC_SPECIAL_CONDITIONS_DATA|EV|end|aSOACServiceOrderNumber|C617500L2|aSOACServiceOrderCorrectionSuffix|A|aNetworkType|FTTPIP|aOldNetworkType|null|aOrderActionId|9258750138|aOrderNumber|9834567890|aOrderActionType|Provide|aCompletionIndicator|false|aSubActionType|null|aCircuitId|AA/MCXX/101006//SW|aSecondaryCircuitID|AA/MCXX/101006/2/SW|aServiceLocation|FieldedAddress|null|null|null|null|421|null|null|null|HDTV WAY|null|null|SANDY SPRINGS|GA|null|null|null|test1|BLDG|3|FLR|5|APT|1|null|null|null|null|null|null|null|END|PROP|SbcServingOfficeWirecenter|ATLNGAIC|PrimaryNpaNxx|404292|end|aOriginalDueDate|06|12|30|aSubsequentDueDate|null|aApplicationDate|06|01|30|aRelatedServiceOrderNumber|null|aLineShareDisconnectFlag|null|aClassOfService|Residential|aResendFlag|false|aRelatedCircuitID|9258750138|aSecondaryRelatedCircuitID|9258758888|aBillingAccountNumber|111111100|com.sbc.eia.bis.BillingAccountNumber|end|aProperties|TelephoneNumber|4045085561|end| 
+
+# SendActivateTNPorting   
+#TESTCASE1=SendActivateTNPortingSubscriptionMsg|BisContext|ServiceCenter|CA|BusinessUnit|SBCLightSpeed|CustomerName|LightSpeed|Application|OMS|LoggingInformation|00000|end|SOACServiceOrderNumber|C07050003|SOACServiceOrderCorrectionSuffix|A|LocalServiceProviderId|516C|TelephoneNumbers|9493020056|end|
+#TESTCASE10=SendTNAssignmentOrder|BisContext|ServiceCenter|MO|CustomerName|CUST|Application|RMDEV|BusinessUnit|OMS|LoggingInformation|00000|JMSCorrelationId|corrID|EMBUSMessageTag|embusMsgTag|SOAC_SPECIAL_CONDITIONS_DATA|EV|end|aSOACServiceOrderNumber|C123456V8|aSOACServiceOrderCorrectionSuffix|A|aOrderNumber|1234567890|aOrderActionType|Provide|aSubActionType|null|aCompletionIndicator|false|aServiceLocation|FieldedAddress|null|null|null|null|5807|null|null|null|DELAWARE|null|AV|GURNE|IL|60031|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|END|PROP|SbcServingOfficeWireCenter|milwwi30|PrimaryNpaNxx|414321|end|aOriginalDueDate|08|10|28|aSubsequentDueDate|null|aApplicationDate|08|10|06|aResendFlag|false|aWireCenter|null|aRateCenter|WAUKEGAN|aTelephoneNumberOrderPairs|aTelephoneNumberOrder|CVOIP|2243817073|OMS|I|I|null|null|null|null|null|null|null|END|aProperties|OmsOrderActionId|5678901234|end|
+#TESTCASE1=PublishTNPortingNotification|XML|pTNPN_NotifySvDisconnect.xml
+
+TESTCASE1=ValidateFacility2|XML|ValidateFacility2_prod1.xml
+
+

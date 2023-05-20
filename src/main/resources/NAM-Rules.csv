@@ -1,0 +1,20 @@
+# NAM error code,Error text,RM error Tag,Description,Origin,Severity,Bis Rules
+NAM-BusinessViolation-00001,null,RM-BusinessViolation-00001,System is offline.,NAM,0,0
+NAM-InvalidData-00051,null,RM-InvalidData-00010,Invalid Data: com.sbc.idl.types.ObjectHandle: aServiceCenter %TAG=SC%s,NAM,0,0
+NAM-InvalidData-00057,null,RM-InvalidData-00515,Invalid Data: com.sbc.idl.bis_types.BisContext: aBisContext,NAM,0,0
+NAM-InvalidData-00174,null,RM-InvalidData-00169,Invalid Data: com.sbc.idl.types.ObjectHandle: aServiceHandle %TAG=TN%s,NAM,1,0
+NAM-InvalidData-00373,null,RM-InvalidData-00403,Missing Data: com.sbc.idl.types.ObjectHandle: aServiceHandle %TAG=TN%s,NAM,1,0
+NAM-InvalidData-00374,null,RM-InvalidData-00396,Missing Data: com.sbc.idl.types.ObjectHandle: aServiceCenter %TAG=SC%s,NAM,1,0
+NAM-InvalidData-00375,null,RM-InvalidData-00011,Invalid Data: com.sbc.idl.types.ObjectHandle: aServiceCenter %TAG=SC%s,NAM,1,0
+NAM-ObjectNotFound-00148,null,RM-ObjectNotFound-00002,No information found.,NAM,0,0
+NAM-SystemFailure-00001,null,RM-SystemFailure-00001,System Timeout,NAM,0,0
+NAM-SystemFailure-00098,null,RM-SystemFailure-00008,System is offline.,NAM,0,0
+NAM-SystemFailure-00100,null,RM-SystemFailure-00194,System failure in LNP Shadow.,NAM,0,0
+NAM-SystemFailure-00101,null,RM-SystemFailure-00194,System failure in LNP Shadow.,NAM,0,0
+NAM-SystemFailure-00102,null,RM-SystemFailure-00194,System failure in LNP Shadow.,NAM,0,0
+NAM-SystemFailure-00253,null,RM-SystemFailure-00194,System failure in LSMS.,NAM,0,0
+NAM-SystemFailure-00254,null,RM-SystemFailure-00194,System failure in LSMS.,NAM,0,0
+NAM-SystemFailure-00259,null,RM-SystemFailure-00194,System failure in LSMS.,NAM,0,0
+null,[Tt][Ii][Mm][Ee][Dd]* *[Oo][Uu][Tt],RM-SystemFailure-00001,Timeout waiting for NAM response.,NAM,0,0
+null,[Dd][Oo][Ww][Nn]* *[Dd][Uu][Ee]* *[Tt][Oo],RM-BusinessViolation-00001,System down due to regularly scheduled maintenance.,NAM,1,0
+null,null,RM-SystemFailure-00521,System failure in RM.,NAM,0,0

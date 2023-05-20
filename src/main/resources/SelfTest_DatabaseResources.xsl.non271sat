@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="selfTestDB.xsl"?>
+
+<database>
+	<databaseResources>
+	    <DATASOURCE>
+            <DB_DESCRIPTION>Oracle 10G JDBC Connection</DB_DESCRIPTION>
+           	<DB_PROPERTY_FILE>rm.properties</DB_PROPERTY_FILE>
+            <TABLE_LIST>
+            	<TABLE_NAME>CARRIER</TABLE_NAME>
+            	<TABLE_NAME>CLLI_TO_SWITCH_OWNER</TABLE_NAME>
+            	<TABLE_NAME>CLLI2PIC</TABLE_NAME>
+            	<TABLE_NAME>CORRELATION</TABLE_NAME>
+            	<TABLE_NAME>CVOIP_ORDER</TABLE_NAME>
+            	<TABLE_NAME>CVOIP_REFERENCE</TABLE_NAME>
+            	<TABLE_NAME>CVOIP_RULES</TABLE_NAME>
+            	<TABLE_NAME>DSLAM_MIGRATION_TABLE</TABLE_NAME>
+            	<TABLE_NAME>EXCHCO</TABLE_NAME>
+            	<TABLE_NAME>EXCHPIC</TABLE_NAME>
+            	<TABLE_NAME>FIBER_FACILITIES</TABLE_NAME>
+            	<TABLE_NAME>LFACS_SERVICES3</TABLE_NAME>
+            	<TABLE_NAME>ORDER_CORRECTION_SUFFIX</TABLE_NAME>
+            	<TABLE_NAME>PIC_TRNSLTN</TABLE_NAME>
+            	<TABLE_NAME>PORT_STATUS</TABLE_NAME>
+            	<TABLE_NAME>RM_BIS_AUTHORIZATION</TABLE_NAME>
+            	<TABLE_NAME>RTID_MESSAGES2</TABLE_NAME>
+            	<TABLE_NAME>SOAC_WIRE_CENTER</TABLE_NAME>
+            	<TABLE_NAME>TNMASTER</TABLE_NAME>
+            	<TABLE_NAME>TOPLISTENER_SOAC_LINK</TABLE_NAME>
+            	<TABLE_NAME>WIRE_CENTER_MIGRATION</TABLE_NAME>
+    	    </TABLE_LIST>           
+        </DATASOURCE>
+	</databaseResources>
+</database>
+ 
+

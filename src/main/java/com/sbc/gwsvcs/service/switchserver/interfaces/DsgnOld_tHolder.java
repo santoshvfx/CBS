@@ -1,0 +1,23 @@
+package com.sbc.gwsvcs.service.switchserver.interfaces;
+
+import java.util.*;
+import org.omg.CORBA.TypeCode;
+
+public class DsgnOld_tHolder implements org.omg.CORBA.portable.Streamable { 
+	public DsgnOld_t value;
+
+	public DsgnOld_tHolder () {
+	}
+	public DsgnOld_tHolder (DsgnOld_t initial) { 
+		value = initial; 
+	}
+	public void _read (org.omg.CORBA.portable.InputStream i) { 
+		value = com.sbc.gwsvcs.service.switchserver.interfaces.DsgnOld_tHelper.read (i); 
+	}
+	public void _write (org.omg.CORBA.portable.OutputStream o) { 
+		com.sbc.gwsvcs.service.switchserver.interfaces.DsgnOld_tHelper.write (o, value); 
+	}
+	public TypeCode _type () {
+		return com.sbc.gwsvcs.service.switchserver.interfaces.DsgnOld_tHelper.type();
+	} 
+}

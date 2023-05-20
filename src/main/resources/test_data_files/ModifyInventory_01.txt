@@ -1,0 +1,44 @@
+<Envelope>
+    <Header version="2.0">
+        <domain>GI.SOAC</domain>
+        <operation>PCN</operation>
+        <msgName>GI_OUTB_MCT</msgName>
+        <object>MCT</object>
+        <msgType>NOTIFICATION</msgType>
+        <interfaceVersion>NA</interfaceVersion>
+        <sender>SOAC</sender>
+        <senderInstance>SOACSTC</senderInstance>
+        <destination>GI</destination>
+        <destinationInstance>CUFTTNS3</destinationInstance>
+        <correlationId>82926070</correlationId>
+        <msgSpecificProperties>
+            <property>
+                <propName>PLHDR</propName>
+                <propValue>USERID=JS7417;USERGRP=ALL;IMSTRAN=YICDMPC ;UNIQID=IMA0MR0506081124446015AAB;USERMOD=D;USERWC=FYA;STATUS=0;DFLTMOD=D;DORD=C1234JLS;DEFIDNEW=JS7417 2006032212444630;DEFID=JS7417 2006032212444630;ORIGENT=WIMA0;LOCWC=FYA;PLREL=15.0 ;PL_LTERM=JS741700;PASSOFF=YES;YIRFS=C;</propValue>
+            </property>
+        </msgSpecificProperties>
+        <additionalInfo>
+            <ttWireCenter>214331</ttWireCenter>
+            <ttOrderNumber>C1234JLS</ttOrderNumber>
+            <ttOrderType>G</ttOrderType>
+            <ttOrderVersion>1</ttOrderVersion>
+            <ttMsgFormat>0</ttMsgFormat>
+            <ttMsgId>A</ttMsgId>
+        </additionalInfo>
+    </Header>
+    <GI_OUTB_MCT version="NA">
+        <BODY>
+            <GRANITE>
+                <ACL>
+                    <CTID>A1.MCXX.000102..SW</CTID>
+                    <F1L>
+                        <CA>2903W</CA>
+                        <PR>75</PR>
+                    </F1L>
+                    <OLDTRE>L01010304-01-04-03</OLDTRE>
+                    <NEWTRE>L01010305-01-04-03</NEWTRE>                 
+                </ACL>
+            </GRANITE>
+        </BODY>
+    </GI_OUTB_MCT>
+</Envelope>

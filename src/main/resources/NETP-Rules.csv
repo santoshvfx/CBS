@@ -1,0 +1,43 @@
+#Major-Code,Minor-Code,RM-Error Code,Description,Origin,Severity,Business Rule
+1643007-001,null,RM-ObjectNotFound-02074,RM001: %TAG=DSLTN%s does not exist,NetP,0,0
+1643007-002,null,RM-BusinessViolation-00002,RM002: %TAG=DSLTN%s already exists,NetP,0,0
+1643007-003,null,RM-ObjectNotFound-02075,RM003: The DSL TN does not exist,NetP,0,0
+1643007-004,null,RM-BusinessViolation-00004 ,RM004: There is a pending order for %TAG=DSLTN%s and cannot be changed,NetP,0,0
+1643007-005,null,RM-BusinessViolation-00005 ,RM005: The DSL TN already exists,NetP,0,0
+1643007-006,null,RM-ObjectNotFound-02076,RM006: The requested CLLI does not exist,NetP,0,0
+1643007-007,null,RM-BusinessViolation-00007,RM007: The requested LATA and CLLI do not match,NetP,0,0
+1643007-008,null,RM-ObjectNotFound-02077,RM008: There are no DSLAMs/OCDs in the requested CLLI,NetP,0,0
+1643007-009,null,RM-BusinessViolation-00009,RM009: The only available DSLAM/OCD is locked,NetP,0,0
+1643007-010,null,RM-BusinessViolation-00010,RM010: The requested Provisioning Type is incorrect,NetP,0,0
+1643007-011,null,RM-BusinessViolation-00011,RM011: The requested State is incorrect,NetP,0,0
+1643007-012,null,RM-BusinessViolation-00012,RM012: All DSLAMs/OCDs for the CLLI requested are at capacity,NetP,0,0
+1643007-013,null,RM-ObjectNotFound-02078,RM013: The requested NPC does not exist,NetP,0,0
+1643007-014,null,RM-BusinessViolation-00014 ,RM014: The requested LATA is incorrect,NetP,0,0
+1643007-015,null,RM-BusinessViolation-00015,RM015: The requested Wire Center CLLI is incorrect,NetP,0,0
+1643007-016,null,RM-BusinessViolation-00016,RM016: The ISP does not provide service to any ATM Circuits in the requested CLLI,NetP,0,0
+1643007-017,null,RM-ObjectNotFound-02079,RM017: The ISP already provides service to the DSL TN,NetP,0,0
+1643007-018,null,RM-BusinessViolation-00018,RM018: The ISP does not provide service to the requested LATA,NetP,0,0
+1643007-019,null,RM-BusinessViolation-00019,RM019: There are no Provider ATM Circuits for the requested criteria,NetP,0,0
+1643007-020,null,RM-BusinessViolation-00020,RM020: The ISP entered does not own/sublease the Provider ATM circuit,NetP,0,0
+1643007-021,null,RM-ObjectNotFound-02080,RM021: The requested Provider ATM Circuit does not exist,NetP,0,0
+1643007-022,null,RM-BusinessViolation-02081,RM022: The CLLI and the Provider ATM Circuit must be associated with the same LATA,NetP,0,0
+1643007-023,null,RM-ObjectNotFound-02082,RM023: The only available Provider ATM Circuit for the order criteria is at full capacity,NetP,0,0
+1643007-024,null,RM-ObjectNotFound-02083 ,RM024: The maximum connection count for the only available Provider ATM Circuit for the order criteria has been reached,NetP,0,0
+1643007-025,null,RM-ObjectNotFound-02084,RM025: There are no Virtual Paths for the requested order criteria,NetP,0,0
+1643007-026,null,RM-ObjectNotFound-02085,RM026: The requested Virtual Path ID does not exist,NetP,0,0
+1643007-027,null,RM-BusinessViolation-00027,RM027: The only available Virtual Path for the order criteria is locked,NetP,0,0
+1643007-028,null,RM-BusinessViolation-00028,RM028: The only available Virtual Path for the order criteria is at full capacity,NetP,0,0
+1643007-029,null,RM-BusinessViolation-00029,RM029: The requested Provider Virtual Path is not connected to a DSLAM/OCD in the requested CLLI,NetP,0,0
+1643007-030,null,RM-ObjectNotFound-02086,RM030: There are no available Virtual Channels for the order criteria that are not in 'reserved/locked' status,NetP,0,0
+1643007-031,null,RM-ObjectNotFound-02087,RM031: The requested Virtual Channel ID does not exist,NetP,0,0
+1643007-032,null,RM-BusinessViolation-00032,RM032: The requested Virtual Channel is locked,NetP,0,0
+1643007-033,null,RM-BusinessViolation-00033,RM033: The requested Virtual Channel ID is not available for provisioning,NetP,0,0
+1643007-034,null,RM-BusinessViolation-00034,RM034: The only available Virtual Channel for the order criteria is aging until %TAG=AGINGDATE%s,NetP,0,0
+1643007-036,null,RM-BusinessViolation-02134,RM036: The transaction attempted or the parameters used are not permitted by defined functionality. Please contact business partner or consult M&P,NetP,0,0
+1643007-037,null,RM-BusinessViolation-02136,RM037: The requested ISP is incorrect,NetP,0,0
+1643007-038,null,RM-BusinessViolation-02137,RM038: Old TN and New TN must be different on the requested transaction since CLLI is changing ,NetP,0,0
+1643007-039,null,RM-BusinessViolation-02135,RM039: The provisioning types on the requested order and Virtual Path do not match,NetP,0,0
+1643007-040,null,RM-BusinessViolation-03380,RM040: Dry Loop DSLAM port capacity is exhausted in this CLLI for the requested ISP,NetP,0,0
+1643007-082,null,RM-BusinessViolation-08398,RM082: Dry Loop DSL Circuit cannot be added to LD DSLAM,NetP,0,0
+1643007-062,null,RM-BusinessViolation-08701,RM062: An attempt to find a port on the same DSLAM has failed all ports are in use.,NetP,0,0
+1643007-I01,null,RM-BusinessViolation-00036,RMI01: The requested change has been completed and cannot be cancelled,NetP,0,0

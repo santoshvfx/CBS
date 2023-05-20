@@ -1,0 +1,9 @@
+# HostLookup Error Code ,Error text to match,RM Error Code,HostLookup Description,Origin,Severity,Business Rule
+HLUP004E,null,RM-InvalidData-00169,Telephone number %TAG=TN%s  must have 10 digits.,HostLookUpServer,1,0
+HLUP045E,null,RM-ObjectNotFound-00001,Unable to find information for %TAG=TN%s.,HostLookUpServer,1,0
+HLUP042E,null,RM-InvalidData-00169,TN %TAG=TN%s owned by non or unknown affiliate.,HostLookUpServer,1,0
+HLUP015E,null,RM-InvalidData-00169,TN %TAG=TN%s appears in Telegence and Telephone Company files.,HostLookUpServer,1,0
+null,[Ss][Ee][Rr][Vv][Ii][Cc][Ee]* *[Nn][Oo][Tt]* *[Aa][Vvi][Aa][Ii][Ll]*,RM-BusinessViolation-00001,System is offline,HostLookUpServer,1,0
+null,[Tt][Ii][Mm][Ee][Dd]* *[Oo][Uu][Tt],RM-SystemFailure-00001,System Timed Out,HostLookUpServer,0,0
+#110,null,RM-SystemFailure-00521,Host System Unable To Process Transaction,HostLookUpServer,0,0
+null,null,RM-SystemFailure-00521,System failure,HostLookUpServer,0,0

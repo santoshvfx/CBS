@@ -1,0 +1,201 @@
+<?xml version="1.0"?>
+<xs:schema targetNamespace="http://www.syndesis.com/NN/XSNN"
+           xmlns="http://www.syndesis.com/NN/XSNN" 
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:jaxb="http://java.sun.com/xml/ns/jaxb"
+           xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc"
+           jaxb:extensionBindingPrefixes="xjc"
+           jaxb:version="1.0"
+           elementFormDefault="unqualified">
+
+<xs:annotation> 
+    <xs:appinfo> 
+        <jaxb:globalBindings generateIsSetMethod="true">
+            <xjc:serializable uid="5000"/>
+        </jaxb:globalBindings>  
+    </xs:appinfo> 
+</xs:annotation> 
+
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!--                       Basic Types                         -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<xs:complexType name="ElementItem">
+  <xs:sequence>
+      <xs:element name="Name"  type="normal_string" />
+      <xs:element name="Value" type="xs:string" />
+  </xs:sequence>
+      <xs:attribute name="Index" type="xs:int"/>
+</xs:complexType>
+
+<xs:complexType name="ObjectItem">
+  <xs:sequence>
+      <xs:element name="Name"  type="normal_string" />
+     <xs:element name="Element" type="ElementItem" minOccurs="0"
+         maxOccurs="unbounded"/>
+     <xs:element name="Object" type="ObjectItem" minOccurs="0"
+         maxOccurs="unbounded"/>
+  </xs:sequence>
+      <xs:attribute name="Index" type="xs:int"/>
+
+</xs:complexType>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!--                       Request Types                          -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+<xs:element name="Request">
+  <xs:complexType>
+    <xs:sequence>
+       <xs:element name="OrderId" type="long_string" minOccurs="0"/>
+       <xs:element name="ActivityId" type="long_string" minOccurs="0"/>
+       <xs:element name="DesignId" type="normal_string" minOccurs="0"/>
+       <xs:element name="RequestItem" type="RequestItem" minOccurs="1"
+           maxOccurs="unbounded"/>
+    </xs:sequence>
+        <xs:attribute name="SchemaVersion" type="normal_string" default="20.0.0.002" />
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType name="RequestItem">
+  <xs:complexContent>
+    <xs:extension base="ObjectItem">
+        <xs:sequence>
+            <xs:element name="ServiceRequest" type="xs:string"/>
+            <xs:element name="ServiceOperation" type="xs:string" minOccurs="0"/>
+            <xs:element name="Action" type="ActionEnum" minOccurs="0" default="Do" />
+            <xs:element name="Notes" type="xs:string" minOccurs="0" />
+            <xs:element name="ClassName" type="xs:string" minOccurs="0"/>
+            <xs:element name="ResultPolicy" type="xs:string" minOccurs="0"/>
+            <xs:element name="RequestItem" type="RequestItem" minOccurs="0"/>
+            <xs:element name="ActivationParams" type="ActivationParamsType" minOccurs="0"/>
+        </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+
+<xs:simpleType name="ActionEnum">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Do"/>
+    <xs:enumeration value="Undo"/>
+    <xs:enumeration value="Redo"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+<!--                       Response                               -->
+<!-- %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% -->
+
+
+<xs:element name="Response">
+  <xs:complexType>
+    <xs:sequence>
+        <xs:element name="OrderId" type="long_string" minOccurs="0" />
+        <xs:element name="ActivityId" type="long_string" minOccurs="0"/>
+        <xs:element name="DesignId" type="normal_string" minOccurs="0"/>
+        <xs:element name="ResponseNumber" type="xs:int" />
+        <xs:element name="LastMessage" type="BooleanEnum" minOccurs="0"/>
+       <xs:element name="ResponseItem" type="ResponseItem" minOccurs="1"
+           maxOccurs="unbounded"/>
+    </xs:sequence>
+        <xs:attribute name="SchemaVersion" type="normal_string" default="20.0.0.002" />
+  </xs:complexType>
+</xs:element>
+
+<xs:simpleType name="BooleanEnum">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="True"/>
+    <xs:enumeration value="False"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="ResponseItem">
+  <xs:complexContent>
+    <xs:extension base="ObjectItem">
+    <xs:sequence>
+      <xs:element name="ServiceRequest" type="xs:string" />
+      <xs:element name="ServiceOperation" type="xs:string" />
+      <xs:element name="Action" type="ActionEnum"  default="Do"/>
+      <xs:element name="ResponseCode" type="ResponseCodeEnum"/>
+      <xs:element name="FailureReason" type="ErrorMessage" minOccurs="0"/>
+      <xs:element name="FailureDetails" type="ErrorDetailsMessage" minOccurs="0"/>
+      <xs:element name="ResponseItem" type="ResponseItem" minOccurs="0"/>
+    </xs:sequence>
+    </xs:extension>
+  </xs:complexContent>
+</xs:complexType>
+
+<xs:simpleType name="ResponseCodeEnum">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="Succeeded"/>
+    <xs:enumeration value="Failed"/>
+    <xs:enumeration value="Pending"/>
+    <xs:enumeration value="NotStarted"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:element name="ExceptionResponse">
+  <xs:complexType>
+    <xs:sequence>
+       <xs:element name="OrderId" type="long_string" minOccurs="0"/>
+       <xs:element name="ActivityId" type="long_string" minOccurs="0"/>
+       <xs:element name="DesignId" type="normal_string" minOccurs="0"/>
+       <xs:element name="FailureReason" type="ErrorMessage"/>
+       <xs:element name="FailureDetails" type="ErrorDetailsMessage" minOccurs="0"/>
+    </xs:sequence>
+        <xs:attribute name="SchemaVersion" type="normal_string" default="20.0.0.002" />
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType name="ErrorMessage">
+    <xs:sequence>
+       <xs:element name="MsgId" type="normal_string" minOccurs="0"/>
+       <xs:element name="Message" type="xs:string" minOccurs="0"/>
+       <xs:element name="Severity" type="normal_string" minOccurs="0"/>
+       <xs:element name="ExceptionType" type="long_string" minOccurs="0"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ErrorDetailsMessage">
+    <xs:sequence>
+       <xs:element name="ErrorDetail" type="ErrorDetailType" minOccurs="1"
+           maxOccurs="unbounded"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ErrorDetailType">
+    <xs:sequence>
+       <xs:element name="MsgId" type="normal_string" minOccurs="1"/>
+       <xs:element name="Message" type="long_string" minOccurs="1"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="ActivationParamsType">
+    <xs:sequence>
+       <xs:element name="NetworkDelivery" type="BooleanEnum"/>
+       <xs:element name="Priority" type="priority_int"/>
+       <xs:element name="DescriptionPolicy" type="long_string" minOccurs="0"/>
+    </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name='normal_string'>
+  <xs:restriction base='xs:string'>
+    <xs:maxLength value='64'/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name='long_string'>
+  <xs:restriction base='xs:string'>
+    <xs:maxLength value='255'/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name='priority_int'>
+  <xs:restriction base="xs:int">
+    <xs:minInclusive value="1"/>
+    <xs:maxInclusive value="999"/>
+  </xs:restriction>
+</xs:simpleType>
+
+</xs:schema>

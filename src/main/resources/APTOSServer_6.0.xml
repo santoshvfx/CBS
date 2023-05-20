@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<vicuna>
+	<propertyList>
+		<APTOSServer>
+			<acceptor>
+			<commHandle>
+				<protocol>
+					<profile>
+						<svcData>
+							<responseTimeToWait TYPE="LONG">16000</responseTimeToWait>
+						</svcData>
+					</profile>
+				</protocol>
+			</commHandle>
+			</acceptor>
+			<directory>
+				<search>
+					<service TYPE="STRING">C=US,O=PB,OU=OSSGW,CN=APTOSServer</service>
+					<serviceID TYPE="LONG">10001</serviceID>
+					<version TYPE="STRING">6.0</version>
+				</search>
+				<selection>
+					<cacheDuration TYPE="USHORT">7200</cacheDuration>
+				</selection>
+			</directory>
+		</APTOSServer>
+		<EventList>
+			<commHandle>
+				<protocol>
+					<profile>
+						<events>
+							<GET_NPA_NXX_PROD_FEAT_AVAIL_REQ>
+								<__id TYPE="LONG">4000</__id>
+								<GET_NPA_NXX_PROD_FEAT_AVAIL_RESP>
+									<__id TYPE="LONG">4001</__id>
+								</GET_NPA_NXX_PROD_FEAT_AVAIL_RESP>
+								<ERROR_RESP>
+									<__id TYPE="LONG">9999</__id>
+								</ERROR_RESP>
+							</GET_NPA_NXX_PROD_FEAT_AVAIL_REQ>
+							<GET_PROD_FEAT_DESC_REQ>
+								<__id TYPE="LONG">4100</__id>
+								<GET_PROD_FEAT_DESC_RESP>
+									<__id TYPE="LONG">4101</__id>
+								</GET_PROD_FEAT_DESC_RESP>
+								<ERROR_RESP>
+									<__id TYPE="LONG">9999</__id>
+								</ERROR_RESP>
+							</GET_PROD_FEAT_DESC_REQ>
+							<GET_CLLI_CIC_AVAIL_REQ>
+								<__id TYPE="LONG">4170</__id>
+								<GET_CLLI_CIC_AVAIL_RESP>
+									<__id TYPE="LONG">4171</__id>
+								</GET_CLLI_CIC_AVAIL_RESP>
+								<ERROR_RESP>
+									<__id TYPE="LONG">9999</__id>
+								</ERROR_RESP>
+							</GET_CLLI_CIC_AVAIL_REQ>
+						</events>
+					</profile>
+				</protocol>
+			</commHandle>
+		</EventList>
+		<accept>
+			<stream>
+				<MTCPDriver>
+					<Attach TYPE="STRING"></Attach> 
+				</MTCPDriver>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</accept>
+		<listen>
+			<transport TYPE="STRING">MTCPAcceptor</transport>
+			<stream>
+				<MTCPAcceptor>
+					<Listen>
+						<LocalAddress TYPE="STRING">127.0.0.1:80</LocalAddress>
+						<Family TYPE="LONG">2</Family>
+					</Listen>
+				</MTCPAcceptor>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</listen>
+	</propertyList>
+</vicuna>
+

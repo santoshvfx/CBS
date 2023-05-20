@@ -1,0 +1,60 @@
+# Error code,Text,RM error code,Description,Origin,Severity,Busines Rule
+TIRK000E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+TIRK001E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+TIRK002E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+TIRK003E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+TIRK004I,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+TIRK005I,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+TIRK006W,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+TIRK007I,null,RM-BusinessViolation-00001,System offline,Circuit Provisioning,1,2
+TIRK009E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+TIRK010E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+TIRK011E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+TIRK012E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+TIRK013E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+TIRK014E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+TIRK015E,null,RM-SystemFailure-00001,System Time Out.,Circuit Provisioning,0,1
+TIRK016E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+TIRK017E,null,RM-SystemFailure-00001,System Time Out.,Circuit Provisioning,0,0
+TIRK018E,null,RM-ObjectNotFound-00205,Required data missing from input.,Circuit Provisioning,1,3
+TIRK019E,null,RM-ObjectNotFound-00205,Data not found.,Circuit Provisioning,1,3
+TIRK022E,null,RM-BusinessViolation-00001,System offline,Circuit Provisioning,1,2
+TIRK024E,null,RM-ObjectNotFound-00205,Data not found.,Circuit Provisioning,1,3
+TIRK025E,null,RM-SystemFailure-00001,System Failure.,Circuit Provisioning,0,0
+TIRK027E,null,RM-ObjectNotFound-00205,Service not found.,Circuit Provisioning,1,3
+TIRK028E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+TIRK057E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+WAS985E,null,RM-ObjectNotFound-00205,Circuit Id was not found in data base.,Circuit Provisioning,1,3
+WAS926E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+WAS901I,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+WAS909I,null,RM-ObjectNotFound-00205,Record was not found in database.,Circuit Provisioning,1,3
+WAS906E,null,RM-SystemFailure-00204,Invalid or missing Circuit Id Format (C).,Circuit Provisioning,0,0
+CXR001E,null,RM-ObjectNotFound-00205,Carrier system does not exist in TIRKS.,Circuit Provisioning,1,3
+CXR201I,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+DFS224,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+DRI985E,null,RM-ObjectNotFound-00205,Circuit id was not found in database.,Circuit Provisioning,1,3
+DRI926E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+DRI928E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+DRI900I,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+DRI906E,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+DFS290,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0
+# CBLS
+TCB006E,null,RM-ObjectNotFound-00205,Cable id was not found in database.,Circuit Provisioning,0,0
+TCB210I,null,RM-ObjectNotFound-00205,Invalid input data.,Circuit Provisioning,0,0
+TCB201I,null,RM-ObjectNotFound-00205,Missing required field.,Circuit Provisioning,0,0
+TCB220I,null,RM-ObjectNotFound-00205,Input data must be numeric.,Circuit Provisioning,0,0
+TCB600E,null,RM-ObjectNotFound-00205,Find failed security violation.,Circuit Provisioning,0,0
+# EQPSC
+#EQP007I,null,RM-ObjectNotFound-00205,Invalid equipment code relay rack or unit.,Circuit Provisioning,0,3
+EQP102E,null,RM-ObjectNotFound-00188,Invalid CLLI code.,Circuit Provisioning,0,3
+EQP106E,null,RM-ObjectNotFound-00205,Invalid equipment code.,Circuit Provisioning,0,3
+EQP141E,null,RM-ObjectNotFound-00205,Invalid level.,Circuit Provisioning,0,3
+EQP143E,null,RM-ObjectNotFound-00205,Invalid level.,Circuit Provisioning,0,3
+EQP144E,null,RM-ObjectNotFound-00205,Invalid level.,Circuit Provisioning,0,3
+EQP164E,null,RM-ObjectNotFound-00205,Invalid input.,Circuit Provisioning,0,3
+EQP402E,null,RM-ObjectNotFound-00205,Invalid equipment code relay rack or unit.,Circuit Provisioning,0,3
+EQP400E,null,RM-ObjectNotFound-00205,Invalid equipment code relay rack or unit.,Circuit Provisioning,0,3
+# RDLOC
+LOC504E,null,RM-ObjectNotFound-00205,CLLI does not exist in TIRKS.,Circuit Provisioning,0,0
+LOC503I,null,RM-ObjectNotFound-00205,CLLI code is marked to be deleted from database.,Circuit Provisioning,0,0
+null,null,RM-SystemFailure-00204,System Failure.,Circuit Provisioning,0,0

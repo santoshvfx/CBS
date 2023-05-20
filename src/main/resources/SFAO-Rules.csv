@@ -1,0 +1,4 @@
+#SFAO Error Code,Error Description,RM-Error Code,Description,Origin,Severity,Business Rule,BIS Error Name,,,,,
+183,null,RM-InvalidData-11394,Invalid Input: RTID and DTID can not have values at the same time,RM,0,0,null,ERR_RM_RTID_AND_DTID_CANNOT_CO_EXIST
+184,null,RM-InvalidData-11395,On Intercept Redirect: RTID or DTID must be supplied,RM,0,0,null,ERR_RM_INTERCEPT_REDIRECT_MISSING_RTID_AND_DTID
+185,null,RM-InvalidData-11433,Exception Routing Max Length Exceeded,RM,0,0,null,ERR_RM_EXCEPTION_ROUTING-LENGTH_EXCEEDED

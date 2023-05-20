@@ -1,0 +1,25 @@
+#Error Code,Error Text to match,RM Error Code,Description,Origin,Severity,BusinessRule,Source Error Name,RM Error Name,Source Description
+1000,null,RM-SystemFailure-00129,CODESRC System Error,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,MessageHandler:EXCEPTION 
+1001,null,RM-SystemFailure-00129,CODESRC System Error:JMS exception,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,MessageHandler:JMSEXCEPTION
+9999,null,RM-SystemFailure-00129,CODESRC System Error: generic exception,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,MessageHandler:GENERIC_EXCEPTION    
+2000,null,RM-SystemFailure-00129,CODESRC System Error:Illegal argument,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,ValidationLayer:ILLEGAL_ARGUMENT 
+2001,null,RM-SystemFailure-00129,CODESRC System Error:JMS exception,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,ValidationLayer:JMS_EXCEPTION
+2002,null,RM-SystemFailure-00129,CODESRC System Error:Jaxb exception,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,ValidationLayer:JAXB_EXCEPTION
+2003,null,RM-SystemFailure-00129,CODESRC System Error:no event defined,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,NO VALID_EVENT is set in VALID_EVENTS property
+2004,null,RM-SystemFailure-00129,CODESRC System Error:invalid event,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,Invalid event cannot continue the processing
+2005,null,RM-ObjectNotFound-00002,CODESRC: invalid CLLI code or invalid cis flag,CODESRCAccess,1,0,null,ERR_RM_CODESRCAccess,Invalid clli code or invalid cic flag.       
+2006,null,RM-ObjectNotFound-00002,CODERC:CLLI is null,CODESRCAccess,1,0,null,ERR_RM_CODESRCAccess,CLLI_NULL               
+3000,null,RM-SystemFailure-00129,CODESRC System Error,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,TranslationLayer:EXCEPTION
+3001,null,RM-SystemFailure-00129,CODESRC System Error:JMS exception,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,TranslationLayer:JMS_EXCEPTION
+3002,null,RM-SystemFailure-00129,CODESRC System Error:Jaxb exception,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,TranslationLayer:JAXB_EXCEPTION
+3003,null,RM-SystemFailure-00129,CODESRC System Error:JDOMException,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,TranslationLayer:JDOMEXCEPTION
+3004,null,RM-SystemFailure-00129,CODESRC System Error:IOMException,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,TranslationLayer:IOMEXCEPTION
+3005,null,RM-SystemFailure-00129,CODESRC System Error:SQLException,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,TranslationLayer:SQLEXCEPTION 
+3006,null,RM-ObjectNotFound-00002,CODESRC:Record Not Found,CODESRCAccess,1,0,null,ERR_RM_CODESRCAccess,data not found in CODESRC database
+5001,null,RM-SystemFailure-00129,CODESRC System Error:JCALayer ,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,JCALayer :SYSTEM_ERROR
+5002,null,RM-BusinessViolation-00001,CODESRC System Offline,CODESRCAccess,1,0,null,ERR_RM_SYSTEM_OFFLINE,CODES database is down or not open
+5003,null,RM-SystemFailure-00001,CODESRC System Error:Timeout,CODESRCAccess,0,0,null,ERR_RM_TIMEOUT,JCALayer:TIMEOUT
+null,null,RM-SystemFailure-00129,CODESRC Server System Error.,CODESRCAccess,0,0,null,ERR_RM_CODESRCAccess,CODESRC Server System Error.
+null,[Tt][Ii][Mm][Ee][Dd]* *[Oo][Uu][Tt],RM-SystemFailure-00001,Timeout waiting for CODESRC response.,CODESRCAccess,0,0,null,ERR_RM_TIMEOUT,Time out from CODESRC
+null,[Dd][Oo][Ww][Nn]* *[Dd][Uu][Ee]* *[Tt][Oo],RM-BusinessViolation-00001,System down due to regularly scheduled maintenance.,CODESRCAccess,1,0,null,ERR_RM_SYSTEM_OFFLINE,System down due to regularly scheduled maintenance.
+null,MDG3xProtocol.pack:,RM-ObjectNotFound-00002,Service Not Found.,CODESRCAccess,1,0,null,ERR_RM_RESOURCE_NOT_FOUND,MDG3xProtocol.pack: %s

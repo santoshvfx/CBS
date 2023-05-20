@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns="http://granite.it.att.com/qni/v2" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:ns1="http://granite.it.att.com/qni/v2" targetNamespace="http://granite.it.att.com/qni/v2" elementFormDefault="qualified">
+	<xsd:complexType name="_Seq.xsd.string">
+		<xsd:sequence>
+			<xsd:element name="item" type="xsd:string" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Port_t">
+		<xsd:sequence>
+			<xsd:element name="portName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="portType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="portAccessId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="portStatus" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="portBandwidth" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="portConnector" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="portDescription" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="PortTerminationCableName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="PortTerminationCablePair" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="PortRelativePosition" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="PortTerminationStatus" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="pathName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="pwSideIndicator" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="pwPortName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="pwTerminationStatus" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="pwSiteName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="pwParentSiteName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="pwSiteType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="pwId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="pwCategory" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="pwStatus" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="pwModel" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="pwCardSlot" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="pwSubCardSlot" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.Port_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="Port_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="SubCardSlot_t">
+		<xsd:sequence>
+			<xsd:element name="subCardSlot" type="xsd:string"/>
+			<xsd:element name="subCardType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="subCardDescription" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="subCardStatus" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="subCardNumberOfPorts" type="xsd:int" minOccurs="0"/>
+			<xsd:element name="subCardHECIG8" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="subCardHECIG10" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="subCardCLEI" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="subCardCFASProjectCode" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="subCardMaxBondedSubscribers" type="xsd:integer" minOccurs="0"/>
+			<xsd:element name="subCardTechnology" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="portType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="port_GRP" type="_Seq._default.Port_t" minOccurs="0"/>
+			<xsd:element name="template_GRP" type="_Seq._default.CardTemplate_t" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.SubCardSlot_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="SubCardSlot_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="vplsInfo_t">
+		<xsd:sequence>
+			<xsd:element name="pathName" type="xsd:string"/>
+			<xsd:element name="totalVPLSCapacity" type="xsd:integer" minOccurs="0"/>
+			<xsd:element name="equipmentPort" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="actionTaken" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.vplsInfo_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="vplsInfo_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="CardSlot_t">
+		<xsd:sequence>
+			<xsd:element name="cardSlot" type="xsd:string"/>
+			<xsd:element name="cardType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cardDescription" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cardStatus" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cardNumberOfSubCards" type="xsd:int" minOccurs="0"/>
+			<xsd:element name="cardNumberOfPorts" type="xsd:int" minOccurs="0"/>
+			<xsd:element name="cardHECIG8" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cardHECIG10" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cardCLEI" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cardCFASProjectCode" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cardMaxBondedSubscribers" type="xsd:integer" minOccurs="0"/>
+			<xsd:element name="cardTechnology" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="portType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="subCard_GRP" type="_Seq._default.SubCardSlot_t" minOccurs="0"/>
+			<xsd:element name="port_GRP" type="_Seq._default.Port_t" minOccurs="0"/>
+			<xsd:element name="template_GRP" type="_Seq._default.CardTemplate_t" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.CardSlot_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="CardSlot_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="CardTemplate_t">
+		<xsd:sequence>
+			<xsd:element name="cardTemplateName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cardSlot" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cardType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cardDefaultIndicator" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cardMaxPorts" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cardMaxBondedSubscribers" type="xsd:integer" minOccurs="0"/>
+			<xsd:element name="cardBwFirstPort" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cardTechnology" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.CardTemplate_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="CardTemplate_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="associations_t">
+		<xsd:sequence>
+			<xsd:element name="objectType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="objectId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="objectCategory" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="objectParentSite" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.associations_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="associations_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.attributes_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="attributes_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.componentList_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="componentList_GRPItem_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="workInstructions_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="workInstructions_GRPItem_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="workInstructions_GRPItem_t">
+		<xsd:sequence>
+			<xsd:element name="instruction" type="xsd:string"/>
+			<xsd:element name="seq1" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="seq2" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.NTI_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="NTI_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="componentList_GRPItem_t">
+		<xsd:sequence>
+			<xsd:element name="componentType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="componentQualifier" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="componentCLLI" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="componentLocation" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="vendor" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="manufacturer" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="model" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="deviceID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="serialNo" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="status" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="inServiceDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="dueDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="orderedDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="purchaseDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="scheduleDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="installedDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="decommissionDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="iD" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="speed" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="HSIAType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="STBType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="UVerseTechnology" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="switchId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="shelfHECIG8" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="targetId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="portName" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="attributes_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="NTI" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="NTIModifier" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="taperCode" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="requestID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="versionNumber" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="noOfHDStreams" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="noOfSDStreams" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="secondaryBondedCircuitID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="CRV" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="IG" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="workInstructions_GRP" type="workInstructions_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="REC_GRP" type="REC_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="IPAddressType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="pathFunction" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="workOrder_GRP" type="workOrder_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="inServiceDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="dueDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="orderedDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="purchaseDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="scheduleDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="installedDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="decommissionDate" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.SOACHeader_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="SOACHeader_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="SOACHeader_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="domain" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="operation" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="msgName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="object" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="interfaceVersion" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="sender" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="senderInstance" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="destination" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="destinationInstance" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="correlationId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="msgType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="msgSpecificProperties_GRP" type="msgSpecificProperties_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="additionalInfoTT_GRP" type="additionalInfoTT_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="OCTL_GRP" type="OCTL_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="NTI_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="NTI" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="NTIModifier" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.msgSpecificProperties_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="msgSpecificProperties_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="msgSpecificProperties_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="PropName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="PropValue" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.additionalInfoTT_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="additionalInfoTT_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="additionalInfoTT_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="circuitAdminArea" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="wireCenter" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="orderNumber" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="orderType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="orderSuffix" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="orderVersion" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="orderPriority" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="orderSolicited" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="tranCode" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="msgId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ContractStatus" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.OCTL_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="OCTL_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="OCTL_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="CORS" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="CRO" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="COR" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="DD" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="CORDDCHG" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="FT" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="MODE" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="MTN" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="BTN" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="OCSI" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ORDNO" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="OT" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="RO" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="SOPID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="VN" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="WCTR" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.REC_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="REC_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="REC_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="CTC" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="CTID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="COR" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="CHANGE" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="CTIDCHG" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="CORADDRCHG" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="L2Data_GRP" type="L2Data_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="SWITCH_GRP" type="SWITCH_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.workOrder_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="workOrder_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="workOrder_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="workOrderName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="projectID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="RID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="WOT" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="DD" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="TASK_GRP" type="_Seq._default.TASK_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.TASK_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="TASK_GRPItem_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TASK_GRPItem_t">
+		<xsd:sequence>
+			<xsd:element name="taskName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="actualStart" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="actualCompleted" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.L2Data_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="L2Data_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="L2Data_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="OLT_LT_VCI_ONT" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="OLT_LT_VPI_ONT" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="OLT_NT_VCI_BOB" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="OLT_NT_VPI_BOB" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ATM_CIRCUIT_TO_ISP" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="BPON_ServiceProfileBOB_to_ISP" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="UPLink" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.SWITCH_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="SWITCH_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="SWITCH_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="voiceGatewayAddress" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="virtualInterfaceGroup" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="callReferenceValue" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="channel" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.ACL_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="ACL_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ACL_GRP_t">
+		<xsd:sequence>
+			<xsd:element name="ACT" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ADL" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="OECSVC" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ASGMCTL" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="AU" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="CCORIG" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="CS" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="CLS" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="CTID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ESL" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="INVU" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="POUT" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="RMKS_1" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="RMKS_2" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="RMKS_3" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="RMKS_4" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="SSM" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="SSP" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="SUBL" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="SUS" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="TN" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="TSP" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="GIHN" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="GIAHN" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="GICN" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="GISTR" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="GISTN" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="EID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ETYP" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="SID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="STYP" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="UID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="UTYP" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Site_t">
+		<xsd:sequence>
+			<xsd:element name="actionType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="siteType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="name" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="status" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="nPATTA" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="servingWireCenterCLLI" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="parentSiteName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="siteLFACSAddress" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="sBCISPoolName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="siteCLLI" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="latitude" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="longitude" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="street" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="structureType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="structureValue" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="elevationType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="elevationValue" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="unitType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="unitValue" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="city" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="county" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="state" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="postal_Code_1" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="postal_Code_2" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="taperCode" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="comment" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="matDescription" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="nIDIndicator" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="power" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="vHOID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="oVALSAddressID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="graniteLUId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="graniteID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="NTI_GRP" type="_Seq._default.NTI_GRP_t" minOccurs="0"/>
+			<xsd:element name="NTIConversionDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="sharedSiteIndicator" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.Site_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="Site_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Equipment_t">
+		<xsd:sequence>
+			<xsd:element name="actionType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="equipmentType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="iD" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="targetId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="status" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="containerId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="category" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="model" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="vendor" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="equipmentClli" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="floor" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="lineup" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="bay" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="shelf" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="shelfHECIG8" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="softwareVersion" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="customerStatus" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="mACAddress" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cardSlot_GRP" type="_Seq._default.CardSlot_t" minOccurs="0"/>
+			<xsd:element name="vplsInfo_GRP" type="_Seq._default.vplsInfo_t" minOccurs="0"/>
+			<xsd:element name="SerialNo" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="revisionRelease" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="inCount" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="outCount" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="size" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="ontPortAID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="orderedDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="dueDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="installedDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="scheduledDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="inServiceDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="decommissionDate" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="tEONumber" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="orderNumber" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="terminalIndicator" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="matDescription" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="comment" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="routenumber" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="filterType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="templateName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="IPAddress" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="portCountIn" type="xsd:int" minOccurs="0"/>
+			<xsd:element name="portCountOut" type="xsd:int" minOccurs="0"/>
+			<xsd:element name="switchId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="deviceId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="distributionArea" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="amsInstance" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="samInstance" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="revisionVersion" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="power" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cFASProjectCode" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="sEMPower" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="AIDRack" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="AIDShelf" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="HostShelfID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="tieCableFormat" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="site" type="Site_t" minOccurs="0"/>
+			<xsd:element name="associations_Grp" type="_Seq._default.associations_t" minOccurs="0"/>
+			<xsd:element name="graniteID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="sharedContainerIndicator" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="equipmentFunction" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.Equipment_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="Equipment_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Cable_t">
+		<xsd:sequence>
+			<xsd:element name="actionType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="iD" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="category" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="vendor" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="status" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="maxBandwidth" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="contains" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="strandCount" type="xsd:int" minOccurs="0"/>
+			<xsd:element name="cableLowStrand" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cableHighStrand" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="termALowStrand" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="termZLowStrand" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cableLength" type="xsd:double" minOccurs="0"/>
+			<xsd:element name="cableLoss" type="xsd:double" minOccurs="0"/>
+			<xsd:element name="comment" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="Asite" type="Site_t" minOccurs="0"/>
+			<xsd:element name="Zsite" type="Site_t" minOccurs="0"/>
+			<xsd:element name="Aequipment" type="Equipment_t" minOccurs="0"/>
+			<xsd:element name="Zequipment" type="Equipment_t" minOccurs="0"/>
+			<xsd:element name="templateName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cFASProjectCode" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cableStrand_GRP" type="_Seq._default.CableStrand_t"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.Cable_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="Cable_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="CableStrand_t">
+		<xsd:sequence>
+			<xsd:element name="strandPairStrandStatus" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="strandPathId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="strandPendingPathId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="strandName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="strandCFASProjectCode" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="strandATerminationStatus" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="strandZTerminationStatus" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="maxBandwidth" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="Asite" type="Site_t" minOccurs="0"/>
+			<xsd:element name="Zsite" type="Site_t" minOccurs="0"/>
+			<xsd:element name="Aequipment" type="Equipment_t" minOccurs="0"/>
+			<xsd:element name="Zequipment" type="Equipment_t" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.CableStrand_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="CableStrand_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="PathElement_t">
+		<xsd:sequence>
+			<xsd:element name="equipment" type="Equipment_t" minOccurs="0"/>
+			<xsd:element name="cable" type="Cable_t" minOccurs="0"/>
+			<xsd:element name="sequenceNumber" type="xsd:integer" minOccurs="0"/>
+			<xsd:element name="objectType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="elementName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="elementCategory" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="slotName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="cablePairStrand" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="portName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="portAccessId" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="channelName" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="status" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="bandwidth" type="xsd:string" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.Sequence_t">
+		<xsd:sequence>
+			<xsd:element name="sequence" type="PathElement_t" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="legName" type="xsd:string"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.Leg_t">
+		<xsd:sequence>
+			<xsd:element name="leg" type="_Seq._default.Sequence_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="Path_t">
+		<xsd:sequence>
+			<xsd:element name="ID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="category" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="bandwidth" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="topology" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="orderNumber" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="orderType" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="status" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="BAN" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="graniteID" type="xsd:string" minOccurs="0"/>
+			<xsd:element name="AsideSite" type="Site_t" minOccurs="0"/>
+			<xsd:element name="ZsideSite" type="Site_t" minOccurs="0"/>
+			<xsd:element name="Leg_GRP" type="_Seq._default.Leg_t" minOccurs="0"/>
+			<xsd:element name="attributes_GRP" type="attributes_GRP_t" minOccurs="0"/>
+			<xsd:element name="componentList_GRP" type="_Seq._default.componentList_GRP_t" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.Path_t">
+		<xsd:sequence>
+			<xsd:element name="item" type="Path_t" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="ACL_GRP" type="ACL_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="componentList_GRP" type="_Seq._default.componentList_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="GroupGlobal_t">
+		<xsd:sequence>
+			<xsd:element name="SOACHeader_GRP" type="SOACHeader_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.GroupGlobal_t">
+		<xsd:sequence>
+			<xsd:element name="SOACHeader_GRP" type="SOACHeader_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="GroupREC_t">
+		<xsd:sequence>
+			<xsd:element name="REC_GRP" type="REC_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="path" type="_Seq._default.Path_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="_Seq._default.GroupREC_t">
+		<xsd:sequence>
+			<xsd:element name="REC_GRP" type="REC_GRP_t" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="path" type="_Seq._default.Path_t" minOccurs="0" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:element name="QueryNetworkInventoryResponse">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="schema_version" type="xsd:string" default="11.0"/>
+				<xsd:element name="site" type="Site_t" minOccurs="0"/>
+				<xsd:element name="equipment" type="_Seq._default.Equipment_t" minOccurs="0"/>
+				<xsd:element name="cable" type="_Seq._default.Cable_t" minOccurs="0"/>
+				<xsd:element name="path" type="_Seq._default.Path_t" minOccurs="0"/>
+				<xsd:element name="GroupGlobal" type="_Seq._default.GroupGlobal_t" minOccurs="0"/>
+				<xsd:element name="GroupREC" type="_Seq._default.GroupREC_t" minOccurs="0" maxOccurs="unbounded"/>
+				<xsd:element name="transactionType" type="xsd:string" minOccurs="0"/>
+			</xsd:sequence>
+		</xsd:complexType>
+	</xsd:element>
+</xsd:schema>

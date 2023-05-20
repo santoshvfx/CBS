@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://granite.it.att.com/qni/v2" xmlns:ch="http://cio.att.com/commonheader/v3" xmlns:qni="http://granite.it.att.com/qni/v2" xmlns:jms="http://schemas.xmlsoap.org/wsdl/jms" xmlns:ns="http://granite.it.att.com/qni/v2" xmlns:ns1="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="GraniteQNI" targetNamespace="http://granite.it.att.com/qni/v2">
+	<types>
+		<xsd:schema elementFormDefault="qualified" targetNamespace="http://granite.it.att.com/qni/v2">
+			<xsd:include schemaLocation="IIAGraniteQNIIn.xsd"/>
+			<xsd:include schemaLocation="IIAGraniteQNIOut.xsd"/>
+			<xsd:import namespace="http://cio.att.com/commonheader/v3" schemaLocation="CommonHeaderV3_3.xsd"/>
+		</xsd:schema>
+	</types>
+	<message name="QueryNetworkInventoryRequest">
+		<part name="QueryNetworkInventoryRequest" element="tns:QueryNetworkInventoryRequest"/>
+	</message>
+	<message name="QueryNetworkInventoryResponse">
+		<part name="QueryNetworkInventoryResponse" element="tns:QueryNetworkInventoryResponse"/>
+	</message>
+	<message name="WSException">
+		<part name="WSException" element="ch:WSException"/>
+	</message>
+	<portType name="QNIPortType">
+		<operation name="QueryNetworkInventory">
+			<input message="tns:QueryNetworkInventoryRequest"/>
+			<output message="tns:QueryNetworkInventoryResponse"/>
+			<fault name="WSException" message="tns:WSException"/>
+		</operation>
+	</portType>
+	<binding name="QNISoapHttpBinding" type="qni:QNIPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<operation name="QueryNetworkInventory">
+			<soap:operation soapAction="http://granite.it.att.com/qni/"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="WSException">
+				<soap:fault name="WSException" use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+	<binding name="QNISoapJmsBinding" type="qni:QNIPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/jms"/>
+		<operation name="QueryNetworkInventory">
+			<soap:operation soapAction="http://granite.it.att.com/qni/"/>
+			<input>
+				<soap:body use="literal"/>
+			</input>
+			<output>
+				<soap:body use="literal"/>
+			</output>
+			<fault name="WSException">
+				<soap:fault name="WSException" use="literal"/>
+			</fault>
+		</operation>
+	</binding>
+	<service name="QNIService">
+		<port name="QNISoapHttpPort" binding="qni:QNISoapHttpBinding">
+			<soap:address location="http://localhost:9080/qni/services/qni"/>
+		</port>
+		<port name="QNISoapJmsPort" binding="qni:QNISoapJmsBinding">
+			<soap:address location="http://localhost:9080/qni/services/qni"/>
+		</port>
+	</service>
+</definitions>

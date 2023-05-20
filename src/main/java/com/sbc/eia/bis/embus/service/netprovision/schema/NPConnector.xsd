@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.sbc.com/eia/rcl/netprovision" xmlns:np="http://www.sbc.com/eia/rcl/netprovision">
+	<xsd:annotation>
+		<xsd:documentation>NPConnector.xsd, Version 2.1.0, Date 08/16/2004</xsd:documentation>
+	</xsd:annotation>
+
+
+	<xsd:complexType name="NpRequestSeqType">
+		<xsd:sequence>
+			<xsd:element name="npRequest" type="np:NpRequestType" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="NpRequestType">
+		<xsd:choice>
+			<xsd:element name="createServiceObjectRequest" type="np:CreateServiceObjectRequestType" />
+			<xsd:element name="modifyServiceObjectRequest" type="np:ModifyServiceObjectRequestType" />
+			<xsd:element name="deleteServiceObjectRequest" type="np:DeleteServiceObjectRequestType" />
+			<xsd:element name="getAllServiceObjectAttributesRequest" type="np:GetAllServiceObjectAttributesRequestType" />
+			<xsd:element name="createServiceElementRequest" type="np:CreateServiceElementRequestType" />
+			<xsd:element name="modifyServiceElementRequest" type="np:ModifyServiceElementRequestType" />
+			<xsd:element name="deleteServiceElementRequest" type="np:DeleteServiceElementRequestType" />
+			<xsd:element name="getServiceElementAttributesRequest" type="np:GetServiceElementAttributesRequestType" />
+			<xsd:element name="listerRequest" type="np:ListerRequestType" />
+			<xsd:element name="getAllErrorsRequest" type="np:GetAllErrorsRequestType" />
+			<xsd:element name="getSessionIdRequest" type="np:GetSessionIdRequestType" />
+		</xsd:choice>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="NpResponseSeqType">
+		<xsd:sequence>
+			<xsd:element name="transactionId" type="xsd:string" minOccurs="0" />
+			<xsd:element name="transactionStatus" type="np:TransactionStatusType" minOccurs="0" />
+			<xsd:element name="npResponse" type="np:NpResponseType" minOccurs="0" maxOccurs="unbounded" />
+			<xsd:element name="exception" type="np:ExceptionType" minOccurs="0" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="NpResponseType">
+		<xsd:choice>
+			<xsd:element name="createServiceObjectResponse" type="np:CreateServiceObjectResponseType" />
+			<xsd:element name="modifyServiceObjectResponse" type="np:ModifyServiceObjectResponseType" />
+			<xsd:element name="deleteServiceObjectResponse" type="np:DeleteServiceObjectResponseType" />
+			<xsd:element name="getAllServiceObjectAttributesResponse" type="np:GetAllServiceObjectAttributesResponseType" />
+			<xsd:element name="createServiceElementResponse" type="np:CreateServiceElementResponseType" />
+			<xsd:element name="modifyServiceElementResponse" type="np:ModifyServiceElementResponseType" />
+			<xsd:element name="deleteServiceElementResponse" type="np:DeleteServiceElementResponseType" />
+			<xsd:element name="getServiceElementAttributesResponse" type="np:GetServiceElementAttributesResponseType" />
+			<xsd:element name="listerResponse" type="np:ListerResponseType" />
+			<xsd:element name="getAllErrorsResponse" type="np:GetAllErrorsResponseType" />
+			<xsd:element name="getSessionIdResponse" type="np:GetSessionIdResponseType" />
+		</xsd:choice>
+	</xsd:complexType>
+
+
+	<xsd:simpleType name="TransactionStatusType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Applied" />
+			<xsd:enumeration value="Abandoned" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:complexType name="CreateServiceObjectRequestType">
+		<xsd:sequence>
+			<xsd:element name="className" type="xsd:string" />
+			<xsd:element name="attributeList" type="np:AttributeValueItemSeqType" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="CreateServiceObjectResponseType">
+		<xsd:sequence>
+			<xsd:element name="id" type="xsd:string" />
+			<xsd:element name="attributeList" type="np:AttributeValueItemSeqType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="DeleteServiceObjectRequestType">
+		<xsd:sequence>
+			<xsd:element name="className" type="xsd:string" />
+			<xsd:element name="id" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="DeleteServiceObjectResponseType">
+		<xsd:sequence>
+		<xsd:element name="attributeList" type="np:AttributeValueItemSeqType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="ModifyServiceObjectRequestType">
+		<xsd:sequence>
+			<xsd:element name="className" type="xsd:string" />
+			<xsd:element name="id" type="xsd:string" />
+			<xsd:element name="attributeList" type="np:AttributeValueItemSeqType" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ModifyServiceObjectResponseType">
+		<xsd:sequence>
+		     <xsd:element name="attributeList" type="np:AttributeValueItemSeqType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="GetAllServiceObjectAttributesRequestType">
+		<xsd:sequence>
+			<xsd:element name="className" type="xsd:string" />
+			<xsd:element name="id" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="GetAllServiceObjectAttributesResponseType">
+		<xsd:sequence>
+			<xsd:element name="attributeList" type="np:AttributeValueItemSeqType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="CreateServiceElementRequestType">
+		<xsd:sequence>
+			<xsd:element name="className" type="xsd:string" />
+			<xsd:element name="attributeList" type="np:AttributeValueItemSeqType" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="CreateServiceElementResponseType">
+		<xsd:sequence>
+			<xsd:element name="id" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+
+	<xsd:complexType name="DeleteServiceElementRequestType">
+		<xsd:sequence>
+			<xsd:element name="className" type="xsd:string" />
+			<xsd:element name="id" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="DeleteServiceElementResponseType">
+		<xsd:sequence>
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="ModifyServiceElementRequestType">
+		<xsd:sequence>
+			<xsd:element name="className" type="xsd:string" />
+			<xsd:element name="id" type="xsd:string" />
+			<xsd:element name="attributeList" type="np:AttributeValueItemSeqType" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ModifyServiceElementResponseType">
+		<xsd:sequence>
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="GetServiceElementAttributesRequestType">
+		<xsd:sequence>
+			<xsd:element name="className" type="xsd:string" />
+			<xsd:element name="id" type="xsd:string" />
+			<xsd:element name="attributeList" type="np:AttributeItemSeqType" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="GetServiceElementAttributesResponseType">
+		<xsd:sequence>
+			<xsd:element name="attributeList" type="np:AttributeValueItemSeqType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="ListerRequestType">
+		<xsd:sequence>
+			<xsd:element name="className" type="xsd:string" />
+			<xsd:element name="searchList" type="np:SearchItemSeqType" />
+			<xsd:element name="columnList" type="np:AttributeItemSeqType" />
+			<xsd:element name="orderByList" type="np:OrderByItemSeqType" minOccurs="0" />
+			<xsd:element name="uniqueByList" type="np:UniqueByItemSeqType" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ListerResponseType">
+		<xsd:sequence>
+			<xsd:element name="count" type="xsd:long" />
+			<xsd:element name="names" type="np:AttributeItemSeqType" minOccurs="0" />
+			<xsd:element name="results" type="np:AttributeResultItemSeqSeqType" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="GetAllErrorsRequestType">
+		<xsd:sequence>
+			<xsd:element name="transactionId" type="xsd:string" maxOccurs="1"/>
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="GetAllErrorsResponseType">
+		<xsd:sequence>
+			<xsd:element name="logMessageList" type="np:LogMessageSeqType" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="GetSessionIdRequestType">
+	</xsd:complexType>
+
+	<xsd:complexType name="GetSessionIdResponseType">
+		<xsd:sequence>
+			<xsd:element name="sessionId" type="xsd:string" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="AttributeValueItemSeqType">
+		<xsd:sequence>
+			<xsd:element name="attributeValueItem" type="np:AttributeValueItemType" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="AttributeValueItemType">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string" />
+			<xsd:element name="value" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="AttributeItemSeqType">
+		<xsd:sequence>
+			<xsd:element name="attributeItem" type="xsd:string" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="SearchItemSeqType">
+		<xsd:sequence>
+			<xsd:element name="searchItem" type="np:SearchItemType" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="SearchItemType">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string" />
+			<xsd:element name="operation" type="np:OperationType" />
+			<xsd:element name="value" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:simpleType name="OperationType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="EqualTo" />
+			<xsd:enumeration value="Like" />
+			<xsd:enumeration value="CaseLike" />
+			<xsd:enumeration value="NotEqualTo" />
+			<xsd:enumeration value="NotLike" />
+			<xsd:enumeration value="CaseNotLike" />
+			<xsd:enumeration value="GreaterThan" />
+			<xsd:enumeration value="GreaterThanOrEqualTo" />
+			<xsd:enumeration value="LessThan" />
+			<xsd:enumeration value="LessThanOrEqualTo" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:complexType name="OrderByItemSeqType">
+		<xsd:sequence>
+			<xsd:element name="orderByItem" type="np:OrderByItemType" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="OrderByItemType">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string" />
+			<xsd:element name="order" type="np:OrderType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:simpleType name="OrderType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Ascending" />
+			<xsd:enumeration value="Descending" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:complexType name="UniqueByItemSeqType">
+		<xsd:sequence>
+			<xsd:element name="uniqueByItem" type="xsd:string" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="AttributeResultItemSeqSeqType">
+		<xsd:sequence>
+			<xsd:element name="attributeResultItemList" type="np:AttributeResultItemSeqType" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="AttributeResultItemSeqType">
+		<xsd:sequence>
+			<xsd:element name="attributeResultItem" type="xsd:string" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="ExceptionType">
+		<xsd:choice>
+			<xsd:element name="systemException" type="np:SystemExceptionType" />
+			<xsd:element name="nptException" type="np:NptExceptionType" />
+			<xsd:element name="nptGetValueException" type="np:NptGetValueExceptionType" />
+			<xsd:element name="nptSaveException" type="np:NptSaveExceptionType" />
+			<xsd:element name="avException" type="np:AVExceptionType" />
+			<xsd:element name="avAutoTransactionException" type="np:AVAutoTransactionExceptionType" />
+		</xsd:choice>
+	</xsd:complexType>
+
+	<xsd:complexType name="SystemExceptionType">
+		<xsd:sequence>
+			<xsd:element name="exceptionClass" type="xsd:string" />
+			<xsd:element name="message" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="NptExceptionType">
+		<xsd:sequence>
+			<xsd:element name="errorStack" type="np:ErrorStackType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="NptGetValueExceptionType">
+		<xsd:sequence>
+			<xsd:element name="errorStack" type="np:ErrorStackType" />
+			<xsd:element name="returnedValue" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="NptSaveExceptionType">
+		<xsd:sequence>
+			<xsd:element name="errorStack" type="np:ErrorStackType" />
+			<xsd:element name="failedAttributes" type="np:AttributeErrorItemSeqType" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="AVExceptionType">
+		<xsd:sequence>
+			<xsd:element name="category" type="np:CategoryType" />
+			<xsd:element name="message" type="xsd:string" />
+			<xsd:element name="details" type="np:AVExceptionDetailsType" />
+			<xsd:element name="abandonedTransactionId" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="AVAutoTransactionExceptionType">
+		<xsd:sequence>
+			<xsd:element name="category" type="np:CategoryType" />
+			<xsd:element name="message" type="xsd:string" />
+			<xsd:element name="details" type="np:AVExceptionDetailsType" />
+			<xsd:element name="abandonedTransactionId" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	
+	<xsd:complexType name="ErrorStackType">
+		<xsd:sequence>
+			<xsd:element name="status" type="xsd:long" />
+			<xsd:element name="category" type="np:CategoryType" />
+			<xsd:element name="errors" type="np:ErrorMessageSeqType" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:simpleType name="CategoryType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="succeeded" />
+			<xsd:enumeration value="succeededWithStatus" />
+			<xsd:enumeration value="failedWaitAndRetry" />
+			<xsd:enumeration value="failedCorrectAndRetry" />
+			<xsd:enumeration value="failedNoRetry" />
+			<xsd:enumeration value="fatalFailure" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:complexType name="AVExceptionDetailsType">
+		<xsd:choice>
+			<xsd:element name="stack" type="np:AVStackExceptionDetailsType" />
+			<xsd:element name="save" type="np:AVSaveExceptionDetailsType" />
+			<xsd:element name="numbered" type="np:AVNumberedExceptionDetailsType" />
+			<xsd:element name="unNumbered" type="np:AVUnNumberedExceptionDetailsType" />
+		</xsd:choice>
+	</xsd:complexType>
+
+	<xsd:complexType name="AVStackExceptionDetailsType">
+		<xsd:sequence>
+			<xsd:element name="status" type="xsd:long" />
+			<xsd:element name="errors" type="np:ErrorMessageSeqType" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="AVSaveExceptionDetailsType">
+		<xsd:sequence>
+			<xsd:element name="status" type="xsd:long" />
+			<xsd:element name="errors" type="np:ErrorMessageSeqType" minOccurs="0" />
+			<xsd:element name="failedAttributes" type="np:AttributeErrorItemSeqType" minOccurs="0" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="AVNumberedExceptionDetailsType">
+		<xsd:sequence>
+			<xsd:element name="status" type="xsd:long" />
+			<xsd:element name="exceptionClass" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+	<xsd:complexType name="AVUnNumberedExceptionDetailsType">
+		<xsd:sequence>
+			<xsd:element name="exceptionClass" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:complexType name="ErrorMessageSeqType">
+		<xsd:sequence>
+			<xsd:element name="error" type="np:ErrorMessageType" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="ErrorMessageType">
+		<xsd:sequence>
+			<xsd:element name="vendor" type="xsd:string" />
+			<xsd:element name="application" type="xsd:string" />
+			<xsd:element name="pid" type="xsd:string" />
+			<xsd:element name="subsystem" type="xsd:string" />
+			<xsd:element name="severity" type="np:SeverityType" />
+			<xsd:element name="verbosity" type="np:VerbosityType" />
+			<xsd:element name="objectId" type="xsd:string" />
+			<xsd:element name="ident" type="xsd:long" />
+			<xsd:element name="message" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:simpleType name="SeverityType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="information" />
+			<xsd:enumeration value="warning" />
+			<xsd:enumeration value="problem" />
+			<xsd:enumeration value="error" />
+			<xsd:enumeration value="fatal" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:simpleType name="VerbosityType">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="user" />
+			<xsd:enumeration value="normal" />
+			<xsd:enumeration value="enhanced" />
+			<xsd:enumeration value="detailed" />
+		</xsd:restriction>
+	</xsd:simpleType>
+
+
+	<xsd:complexType name="AttributeErrorItemSeqType">
+		<xsd:sequence>
+			<xsd:element name="attributeError" type="np:AttributeErrorItemType" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="AttributeErrorItemType">
+		<xsd:sequence>
+			<xsd:element name="name" type="xsd:string" />
+			<xsd:element name="number" type="xsd:long" />
+			<xsd:element name="text" type="xsd:string" />
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="LogMessageSeqType">
+		<xsd:sequence>
+			<xsd:element name="logMessage" type="np:LogMessageType" maxOccurs="unbounded" />
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="LogMessageType">
+		<xsd:sequence>
+			<xsd:element name="source" type="xsd:string" />
+			<xsd:element name="timestamp" type="xsd:string" />
+			<xsd:element name="message" type="np:ErrorMessageType" />
+		</xsd:sequence>
+	</xsd:complexType>
+
+
+	<xsd:element name="npRequestList" type="np:NpRequestSeqType" />
+	<xsd:element name="npResponseList" type="np:NpResponseSeqType" />
+</xsd:schema>

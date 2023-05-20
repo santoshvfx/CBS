@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?> 
+<m1:OpIdl3_3Client.OrderPathSubscriptionNotifications.NotifySvActivityFailure xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:m1="http://www.evolving.com/OrderPath/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"> 
+	<actID>56508</actID> 
+	<initSpid>SP25</initSpid> 
+	<tnRng> 
+		<tnValue>1491490300</tnValue> 
+        <endStation></endStation> 
+	</tnRng> 
+	<vectSvID></vectSvID> 
+	<errCode>301</errCode> 
+	<actStatus>AutoCancelledActivity</actStatus> 
+	<errStr>The Subscription Version listed for theActivate request could not be loc ated.  Check your input data and try again.</errStr> 
+    <orderNum> 
+    	<ordTyp>1</ordTyp> 
+        <serNum>555555555555555</serNum> 
+        <supNum>1</supNum > 
+     </orderNum> 
+</m1:OpIdl3_3Client.OrderPathSubscriptionNotifications.NotifySvActivityFailure>

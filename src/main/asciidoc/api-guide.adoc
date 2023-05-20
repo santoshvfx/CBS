@@ -1,0 +1,535 @@
+= RM BIS API Documentation
+:toc: left
+
+=== ping
+
+==== EJB Method: ping()
+
+.ping http request
+include::{snippets}/ping/http-request.adoc[]
+
+.ping curl request
+include::{snippets}/ping/curl-request.adoc[]
+
+.ping httpie request
+include::{snippets}/ping/httpie-request.adoc[]
+
+.ping http response (Response POJO: PingReturn.java)
+include::{snippets}/ping/http-response.adoc[]
+
+.ping fields description
+include::{snippets}/ping/request-fields.adoc[]
+
+.ping fields description
+include::{snippets}/ping/response-fields.adoc[]
+
+=== selfTest
+
+==== EJB Method: selfTest()
+
+.selfTest http request
+include::{snippets}/selfTest/http-request.adoc[]
+
+.selfTest curl request
+include::{snippets}/selfTest/curl-request.adoc[]
+
+.selfTest httpie request
+include::{snippets}/selfTest/httpie-request.adoc[]
+
+.selfTest http response (Response POJO: SelfTestReturn.java)
+include::{snippets}/selfTest/http-response.adoc[]
+
+.selfTest fields description
+include::{snippets}/selfTest/request-fields.adoc[]
+
+.selfTest fields description
+include::{snippets}/selfTest/response-fields.adoc[]
+
+=== retrieveResourcesForService
+
+==== EJB Method: retrieveResourcesForService()
+
+.retrieveResourcesForService http request
+include::{snippets}/retrieveResourcesForService/http-request.adoc[]
+
+.retrieveResourcesForService curl request
+include::{snippets}/retrieveResourcesForService/curl-request.adoc[]
+
+.retrieveResourcesForService httpie request
+include::{snippets}/retrieveResourcesForService/httpie-request.adoc[]
+
+.retrieveResourcesForService http response (Response POJO: retrieveResourcesForServiceReturn.java)
+include::{snippets}/retrieveResourcesForService/http-response.adoc[]
+
+.retrieveResourcesForService fields description
+include::{snippets}/retrieveResourcesForService/request-fields.adoc[]
+
+.retrieveResourcesForService fields description
+include::{snippets}/retrieveResourcesForService/response-fields.adoc[]
+
+=== retrieveServiceProvidersForResource
+
+==== EJB Method: retrieveServiceProvidersForResource()
+
+.retrieveServiceProvidersForResource http request
+include::{snippets}/retrieveServiceProvidersForResource/http-request.adoc[]
+
+.retrieveServiceProvidersForResource curl request
+include::{snippets}/retrieveServiceProvidersForResource/curl-request.adoc[]
+
+.retrieveServiceProvidersForResource httpie request
+include::{snippets}/retrieveServiceProvidersForResource/httpie-request.adoc[]
+
+.retrieveServiceProvidersForResource http response (Response POJO: RetrieveServiceProvidersForResourceReturn.java)
+include::{snippets}/retrieveServiceProvidersForResource/http-response.adoc[]
+
+.retrieveServiceProvidersForResource fields description
+include::{snippets}/retrieveServiceProvidersForResource/request-fields.adoc[]
+
+.retrieveServiceProvidersForResource fields description
+include::{snippets}/retrieveServiceProvidersForResource/response-fields.adoc[]
+
+=== retrieveServiceProvidersForService
+
+==== EJB Method: retrieveServiceProvidersForService()
+
+.retrieveServiceProvidersForService http request
+include::{snippets}/retrieveServiceProvidersForService/http-request.adoc[]
+
+.retrieveServiceProvidersForService curl request
+include::{snippets}/retrieveServiceProvidersForService/curl-request.adoc[]
+
+.retrieveServiceProvidersForService httpie request
+include::{snippets}/retrieveServiceProvidersForService/httpie-request.adoc[]
+
+.retrieveServiceProvidersForService http response (Response POJO: RetrieveServiceProvidersForServiceReturn.java)
+include::{snippets}/retrieveServiceProvidersForService/http-response.adoc[]
+
+.retrieveServiceProvidersForService fields description
+include::{snippets}/retrieveServiceProvidersForService/request-fields.adoc[]
+
+.retrieveServiceProvidersForService fields description
+include::{snippets}/retrieveServiceProvidersForService/response-fields.adoc[]
+
+=== createFacilityAssignment
+
+==== EJB Method: createFacilityAssignment()
+
+.createFacilityAssignment http request
+include::{snippets}/createFacilityAssignment/http-request.adoc[]
+
+.createFacilityAssignment curl request
+include::{snippets}/createFacilityAssignment/curl-request.adoc[]
+
+.createFacilityAssignment httpie request
+include::{snippets}/createFacilityAssignment/httpie-request.adoc[]
+
+.createFacilityAssignment http response (Response POJO: CreateFacilityAssignmentReturn.java)
+include::{snippets}/createFacilityAssignment/http-response.adoc[]
+
+.createFacilityAssignment fields description
+include::{snippets}/createFacilityAssignment/request-fields.adoc[]
+
+.createFacilityAssignment fields description
+include::{snippets}/createFacilityAssignment/response-fields.adoc[]
+
+=== publishAutoDiscoveryResults
+
+==== EJB Method: publishAutoDiscoveryResults()
+
+.publishAutoDiscoveryResults http request
+include::{snippets}/publishAutoDiscoveryResults/http-request.adoc[]
+
+.publishAutoDiscoveryResults curl request
+include::{snippets}/publishAutoDiscoveryResults/curl-request.adoc[]
+
+.publishAutoDiscoveryResults httpie request
+include::{snippets}/publishAutoDiscoveryResults/httpie-request.adoc[]
+
+.publishAutoDiscoveryResults http response (Response POJO: PublishAutoDiscoveryResultsReturn.java)
+include::{snippets}/publishAutoDiscoveryResults/http-response.adoc[]
+
+.publishAutoDiscoveryResults fields description
+include::{snippets}/publishAutoDiscoveryResults/request-fields.adoc[]
+
+.publishAutoDiscoveryResults fields description
+include::{snippets}/publishAutoDiscoveryResults/response-fields.adoc[]
+
+=== sendTNAssignmentOrder
+
+==== EJB Method: sendTNAssignmentOrder()
+
+.sendTNAssignmentOrder http request
+include::{snippets}/sendTNAssignmentOrder/http-request.adoc[]
+
+.sendTNAssignmentOrder curl request
+include::{snippets}/sendTNAssignmentOrder/curl-request.adoc[]
+
+.sendTNAssignmentOrder httpie request
+include::{snippets}/sendTNAssignmentOrder/httpie-request.adoc[]
+
+.sendTNAssignmentOrder http response (Response POJO: SendTNAssignmentOrderReturn.java)
+include::{snippets}/sendTNAssignmentOrder/http-response.adoc[]
+
+.sendTNAssignmentOrder fields description
+include::{snippets}/sendTNAssignmentOrder/request-fields.adoc[]
+
+.sendTNAssignmentOrder fields description
+include::{snippets}/sendTNAssignmentOrder/response-fields.adoc[]
+
+=== sendActivateTNPortingSubscriptionMsg
+
+==== EJB Method: sendActivateTNPortingSubscriptionMsg()
+
+.sendActivateTNPortingSubscriptionMsg http request
+include::{snippets}/sendActivateTNPortingSubscriptionMsg/http-request.adoc[]
+
+.sendActivateTNPortingSubscriptionMsg curl request
+include::{snippets}/sendActivateTNPortingSubscriptionMsg/curl-request.adoc[]
+
+.sendActivateTNPortingSubscriptionMsg httpie request
+include::{snippets}/sendActivateTNPortingSubscriptionMsg/httpie-request.adoc[]
+
+.sendActivateTNPortingSubscriptionMsg http response (Response POJO: SendActivateTNPortingSubscriptionMsgReturn.java)
+include::{snippets}/sendActivateTNPortingSubscriptionMsg/http-response.adoc[]
+
+.sendActivateTNPortingSubscriptionMsg fields description
+include::{snippets}/sendActivateTNPortingSubscriptionMsg/request-fields.adoc[]
+
+.sendActivateTNPortingSubscriptionMsg fields description
+include::{snippets}/sendActivateTNPortingSubscriptionMsg/response-fields.adoc[]
+
+
+=== sendFacilityAssignmentOrder
+
+==== EJB Method: sendFacilityAssignmentOrder()
+
+.sendFacilityAssignmentOrder http request
+include::{snippets}/sendFacilityAssignmentOrder/http-request.adoc[]
+
+.sendFacilityAssignmentOrder curl request
+include::{snippets}/sendFacilityAssignmentOrder/curl-request.adoc[]
+
+.sendFacilityAssignmentOrder httpie request
+include::{snippets}/sendFacilityAssignmentOrder/httpie-request.adoc[]
+
+.sendFacilityAssignmentOrder http response (Response POJO: SendFacilityAssignmentOrderReturn.java)
+include::{snippets}/sendFacilityAssignmentOrder/http-response.adoc[]
+
+.sendFacilityAssignmentOrder fields description
+include::{snippets}/sendFacilityAssignmentOrder/request-fields.adoc[]
+
+.sendFacilityAssignmentOrder fields description
+include::{snippets}/sendFacilityAssignmentOrder/response-fields.adoc[]
+
+=== sendFacilityAssignmentOrder2
+
+==== EJB Method: sendFacilityAssignmentOrder2()
+
+.sendFacilityAssignmentOrder2 http request
+include::{snippets}/sendFacilityAssignmentOrder2/http-request.adoc[]
+
+.sendFacilityAssignmentOrder2 curl request
+include::{snippets}/sendFacilityAssignmentOrder2/curl-request.adoc[]
+
+.sendFacilityAssignmentOrder2 httpie request
+include::{snippets}/sendFacilityAssignmentOrder2/httpie-request.adoc[]
+
+.sendFacilityAssignmentOrder2 http response (Response POJO: SendFacilityAssignmentOrder2Return.java)
+include::{snippets}/sendFacilityAssignmentOrder2/http-response.adoc[]
+
+.sendFacilityAssignmentOrder2 fields description
+include::{snippets}/sendFacilityAssignmentOrder2/request-fields.adoc[]
+
+.sendFacilityAssignmentOrder2 fields description
+include::{snippets}/sendFacilityAssignmentOrder2/response-fields.adoc[]
+
+=== sendFacilityAssignmentOrder3
+
+==== EJB Method: sendFacilityAssignmentOrder3()
+
+.sendFacilityAssignmentOrder3 http request
+include::{snippets}/sendFacilityAssignmentOrder3/http-request.adoc[]
+
+.sendFacilityAssignmentOrder3 curl request
+include::{snippets}/sendFacilityAssignmentOrder3/curl-request.adoc[]
+
+.sendFacilityAssignmentOrder3 httpie request
+include::{snippets}/sendFacilityAssignmentOrder3/httpie-request.adoc[]
+
+.sendFacilityAssignmentOrder3 http response (Response POJO: SendFacilityAssignmentOrder3Return.java)
+include::{snippets}/sendFacilityAssignmentOrder3/http-response.adoc[]
+
+.sendFacilityAssignmentOrder3 fields description
+include::{snippets}/sendFacilityAssignmentOrder3/request-fields.adoc[]
+
+.sendFacilityAssignmentOrder3 fields description
+include::{snippets}/sendFacilityAssignmentOrder3/response-fields.adoc[]
+
+
+=== sendFacilityAssignmentOrder4
+
+==== EJB Method: sendFacilityAssignmentOrder4()
+
+.sendFacilityAssignmentOrder4 http request
+include::{snippets}/sendFacilityAssignmentOrder4/http-request.adoc[]
+
+.sendFacilityAssignmentOrder4 curl request
+include::{snippets}/sendFacilityAssignmentOrder4/curl-request.adoc[]
+
+.sendFacilityAssignmentOrder4 httpie request
+include::{snippets}/sendFacilityAssignmentOrder4/httpie-request.adoc[]
+
+.sendFacilityAssignmentOrder4 http response (Response POJO: SendFacilityAssignmentOrder4Return.java)
+include::{snippets}/sendFacilityAssignmentOrder4/http-response.adoc[]
+
+.sendFacilityAssignmentOrder4 fields description
+include::{snippets}/sendFacilityAssignmentOrder4/request-fields.adoc[]
+
+.sendFacilityAssignmentOrder4 fields description
+include::{snippets}/sendFacilityAssignmentOrder4/response-fields.adoc[]
+
+=== validateFacility
+
+==== EJB Method: validateFacility()
+
+.validateFacility http request
+include::{snippets}/validateFacility/http-request.adoc[]
+
+.validateFacility curl request
+include::{snippets}/validateFacility/curl-request.adoc[]
+
+.validateFacility httpie request
+include::{snippets}/validateFacility/httpie-request.adoc[]
+
+.validateFacility http response (Response POJO: ValidateFacilityForProvisioningReturn.java)
+include::{snippets}/validateFacility/http-response.adoc[]
+
+.validateFacility fields description
+include::{snippets}/validateFacility/request-fields.adoc[]
+
+.validateFacility fields description
+include::{snippets}/validateFacility/response-fields.adoc[]
+
+
+=== activateFiberServiceTNPort
+
+==== EJB Method: activateFiberServiceTNPort()
+
+.activateFiberServiceTNPort http request
+include::{snippets}/activateFiberServiceTNPort/http-request.adoc[]
+
+.activateFiberServiceTNPort curl request
+include::{snippets}/activateFiberServiceTNPort/curl-request.adoc[]
+
+.activateFiberServiceTNPort httpie request
+include::{snippets}/activateFiberServiceTNPort/httpie-request.adoc[]
+
+.activateFiberServiceTNPort http response (Response POJO: ActivateFiberServiceTNPortReturn.java)
+include::{snippets}/activateFiberServiceTNPort/http-response.adoc[]
+
+.activateFiberServiceTNPort fields description
+include::{snippets}/activateFiberServiceTNPort/request-fields.adoc[]
+
+.activateFiberServiceTNPort fields description
+include::{snippets}/activateFiberServiceTNPort/response-fields.adoc[]
+
+=== submitFiberServiceTNAssignmentOrder
+
+==== EJB Method: submitFiberServiceTNAssignmentOrder()
+
+.submitFiberServiceTNAssignmentOrder http request
+include::{snippets}/submitFiberServiceTNAssignmentOrder/http-request.adoc[]
+
+.submitFiberServiceTNAssignmentOrder curl request
+include::{snippets}/submitFiberServiceTNAssignmentOrder/curl-request.adoc[]
+
+.submitFiberServiceTNAssignmentOrder httpie request
+include::{snippets}/submitFiberServiceTNAssignmentOrder/httpie-request.adoc[]
+
+.submitFiberServiceTNAssignmentOrder http response (Response POJO: SubmitFiberServiceTNAssignmentOrderReturn.java)
+include::{snippets}/submitFiberServiceTNAssignmentOrder/http-response.adoc[]
+
+.submitFiberServiceTNAssignmentOrder fields description
+include::{snippets}/submitFiberServiceTNAssignmentOrder/request-fields.adoc[]
+
+.submitFiberServiceTNAssignmentOrder fields description
+include::{snippets}/submitFiberServiceTNAssignmentOrder/response-fields.adoc[]
+
+=== addFiberServiceTNPort
+
+==== EJB Method: addFiberServiceTNPort()
+
+.addFiberServiceTNPort http request
+include::{snippets}/addFiberServiceTNPort/http-request.adoc[]
+
+.addFiberServiceTNPort curl request
+include::{snippets}/addFiberServiceTNPort/curl-request.adoc[]
+
+.addFiberServiceTNPort httpie request
+include::{snippets}/addFiberServiceTNPort/httpie-request.adoc[]
+
+.addFiberServiceTNPort http response (Response POJO: AddFiberServiceTNPortReturn.java)
+include::{snippets}/addFiberServiceTNPort/http-response.adoc[]
+
+.addFiberServiceTNPort fields description
+include::{snippets}/addFiberServiceTNPort/request-fields.adoc[]
+
+.addFiberServiceTNPort fields description
+include::{snippets}/addFiberServiceTNPort/response-fields.adoc[]
+
+=== addFiberServiceTNPort2
+
+==== EJB Method: addFiberServiceTNPort2()
+
+.addFiberServiceTNPort2 http request
+include::{snippets}/addFiberServiceTNPort2/http-request.adoc[]
+
+.addFiberServiceTNPort2 curl request
+include::{snippets}/addFiberServiceTNPort2/curl-request.adoc[]
+
+.addFiberServiceTNPort2 httpie request
+include::{snippets}/addFiberServiceTNPort2/httpie-request.adoc[]
+
+.addFiberServiceTNPort2 http response (Response POJO: AddFiberServiceTNPort2Return.java)
+include::{snippets}/addFiberServiceTNPort2/http-response.adoc[]
+
+.addFiberServiceTNPort2 fields description
+include::{snippets}/addFiberServiceTNPort2/request-fields.adoc[]
+
+.addFiberServiceTNPort2 fields description
+include::{snippets}/addFiberServiceTNPort2/response-fields.adoc[]
+
+
+=== inquireFiberServiceTNPortStatus
+
+==== EJB Method: inquireFiberServiceTNPortStatus()
+
+.inquireFiberServiceTNPortStatus http request
+include::{snippets}/inquireFiberServiceTNPortStatus/http-request.adoc[]
+
+.inquireFiberServiceTNPortStatus curl request
+include::{snippets}/inquireFiberServiceTNPortStatus/curl-request.adoc[]
+
+.inquireFiberServiceTNPortStatus httpie request
+include::{snippets}/inquireFiberServiceTNPortStatus/httpie-request.adoc[]
+
+.inquireFiberServiceTNPortStatus http response (Response POJO: InquireFiberServiceTNPortStatusReturn.java)
+include::{snippets}/inquireFiberServiceTNPortStatus/http-response.adoc[]
+
+.inquireFiberServiceTNPortStatus fields description
+include::{snippets}/inquireFiberServiceTNPortStatus/request-fields.adoc[]
+
+.inquireFiberServiceTNPortStatus fields description
+include::{snippets}/inquireFiberServiceTNPortStatus/response-fields.adoc[]
+
+
+=== submitFiberServiceTNAssignmentOrder2
+
+==== EJB Method: submitFiberServiceTNAssignmentOrder2()
+
+.submitFiberServiceTNAssignmentOrder2 http request
+include::{snippets}/submitFiberServiceTNAssignmentOrder2/http-request.adoc[]
+
+.submitFiberServiceTNAssignmentOrder2 curl request
+include::{snippets}/submitFiberServiceTNAssignmentOrder2/curl-request.adoc[]
+
+.submitFiberServiceTNAssignmentOrder2 httpie request
+include::{snippets}/submitFiberServiceTNAssignmentOrder2/httpie-request.adoc[]
+
+.submitFiberServiceTNAssignmentOrder2 http response (Response POJO: SubmitFiberServiceTNAssignmentOrder2Return.java)
+include::{snippets}/submitFiberServiceTNAssignmentOrder2/http-response.adoc[]
+
+.submitFiberServiceTNAssignmentOrder2 fields description
+include::{snippets}/submitFiberServiceTNAssignmentOrder2/request-fields.adoc[]
+
+.submitFiberServiceTNAssignmentOrder2 fields description
+include::{snippets}/submitFiberServiceTNAssignmentOrder2/response-fields.adoc[]
+
+=== validateFacility
+
+==== EJB Method: validateFacility()
+
+.validateFacility http request
+include::{snippets}/validateFacility/http-request.adoc[]
+
+.validateFacility curl request
+include::{snippets}/validateFacility/curl-request.adoc[]
+
+.validateFacility httpie request
+include::{snippets}/validateFacility/httpie-request.adoc[]
+
+.validateFacility http response (Response POJO: ValidateFacilityReturn.java)
+include::{snippets}/validateFacility/http-response.adoc[]
+
+.validateFacility fields description
+include::{snippets}/validateFacility/request-fields.adoc[]
+
+.validateFacility fields description
+include::{snippets}/validateFacility/response-fields.adoc[]
+
+=== validateFacility2
+
+==== EJB Method: validateFacility2()
+
+.validateFacility2 http request
+include::{snippets}/validateFacility2/http-request.adoc[]
+
+.validateFacility2 curl request
+include::{snippets}/validateFacility2/curl-request.adoc[]
+
+.validateFacility2 httpie request
+include::{snippets}/validateFacility2/httpie-request.adoc[]
+
+.validateFacility2 http response (Response POJO: ValidateFacility2Return.java)
+include::{snippets}/validateFacility2/http-response.adoc[]
+
+.validateFacility2 fields description
+include::{snippets}/validateFacility2/request-fields.adoc[]
+
+.validateFacility2 fields description
+include::{snippets}/validateFacility2/response-fields.adoc[]
+
+=== validateFacility3
+
+==== EJB Method: validateFacility3()
+
+.validateFacility3 http request
+include::{snippets}/validateFacility3/http-request.adoc[]
+
+.validateFacility3 curl request
+include::{snippets}/validateFacility3/curl-request.adoc[]
+
+.validateFacility3 httpie request
+include::{snippets}/validateFacility3/httpie-request.adoc[]
+
+.validateFacility3 http response (Response POJO: ValidateFacility3Return.java)
+include::{snippets}/validateFacility3/http-response.adoc[]
+
+.validateFacility3 fields description
+include::{snippets}/validateFacility3/request-fields.adoc[]
+
+.validateFacility3 fields description
+include::{snippets}/validateFacility3/response-fields.adoc[]
+
+=== publishRGActivation
+
+==== EJB Method: publishRGActivation()
+
+.publishRGActivation http request
+include::{snippets}/publishRGActivation/http-request.adoc[]
+
+.publishRGActivation curl request
+include::{snippets}/publishRGActivation/curl-request.adoc[]
+
+.publishRGActivation httpie request
+include::{snippets}/publishRGActivation/httpie-request.adoc[]
+
+.publishRGActivation http response (Response POJO: PublishRGActivationReturn.java)
+include::{snippets}/publishRGActivation/http-response.adoc[]
+
+.publishRGActivation fields description
+include::{snippets}/publishRGActivation/request-fields.adoc[]
+
+.publishRGActivation fields description
+include::{snippets}/publishRGActivation/response-fields.adoc[]

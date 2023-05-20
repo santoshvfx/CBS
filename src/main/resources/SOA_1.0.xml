@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmsops>
+	<messagingFunctions>
+		<SendActivateTNPortingSubscriptionMsgRequest>
+			<shouldRetryOnError>false</shouldRetryOnError>
+			<retryThreshold>2</retryThreshold>			
+			<deliver>
+				<messageTag>soa.sendActivateTNPortingSubscriptionMsg</messageTag>
+				<deliveryMode>nonpersistent</deliveryMode>
+				<messageExpirationMillis>72000</messageExpirationMillis>
+				<messageIDToCorrelationID>true</messageIDToCorrelationID>
+				<responseMessageExpiration>84000</responseMessageExpiration>				
+			</deliver>
+			<pickup>
+				<timeToWaitMillis>84000</timeToWaitMillis>
+			</pickup>
+		</SendActivateTNPortingSubscriptionMsgRequest>
+	</messagingFunctions>
+</jmsops>

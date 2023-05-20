@@ -1,0 +1,143 @@
+# Each transaction will have a block of ten error codes.
+# Validator error code, Error text, RM error Tag, Description, Origin, Severity, Bis Rule
+# Validator errors.
+001,null,RM-SystemFailure-08699,Validator failure error: %TAG=VARIABLE%s,RM,0,0
+002,null,RM-DataNotFound-08699,No matching data found in object: %TAG=VARIABLE%s,RM,0,0
+# RetrieveFacilityEquipmentInfo
+010,null,RM-InvalidData-8451,Missing Equipment Target ID in object %TAG=VARIABLE%s,RM,0,0
+# RetrieveFacilityCircuitInfo
+020,null,RM-InvalidData-8450,Missing Facility Circuit in object %TAG=VARIABLE%s,RM,0,0
+# ActivateResoucesForDSLService
+030,null,RM-InvalidData-08700,Invalid data in object %TAG=VARIABLE%s,RM,0,0
+031,null,RM-DataNotFound-08699,No data in object %TAG=VARIABLE%s,RM,0,0
+# SendActivateTNPortingSubscriptionMsg
+040,null,RM-InvalidData-03129,Missing the required Service Order Number in object %TAG=VARIABLE%s,RM,0,0
+041,null,RM-InvalidData-08603,Missing Service Order correction Suffix in object %TAG=VARIABLE%s,RM,0,0
+042,null,RM-InvalidData-02106,Service Provider is not entered in object %TAG=VARIABLE%s,RM,0,0
+043,null,RM-InvalidData-08777,Missing Telephone Number in object %TAG=VARIABLE%s,RM,0,0
+# ProductSubscriptionValidation
+050,null,RM-InvalidData-08803,Invalid Component Type in object %TAG=VARIABLE%s,RM,0,0
+051,null,RM-InvalidData-08784,Invalid HSIA Type in object %TAG=VARIABLE%s,RM,0,0
+052,null,RM-InvalidData-08787,Invalid Component Speed in object %TAG=VARIABLE%s,RM,0,0
+053,null,RM-InvalidData-08785,Invalid IP Address Type in object %TAG=VARIABLE%s,RM,0,0
+054,null,RM-InvalidData-08789,Invalid Component Action Code in object %TAG=VARIABLE%s,RM,0,0
+055,null,RM-InvalidData-09020,Invalid HD Streams in object %TAG=VARIABLE%s,RM,0,0
+056,null,RM-InvalidData-09021,Invalid SD Streams in object %TAG=VARIABLE%s,RM,0,0
+057,null,RM-InvalidData-08436,Missing Network Component in object %TAG=VARIABLE%s,RM,0,0
+058,null,RM-InvalidData-08452,Invalid Device Type in object %TAG=VARIABLE%s,RM,0,0
+059,null,RM-InvalidData-03456,Missing Serial Number in object %TAG=VARIABLE%s,RM,0,0
+060,null,RM-InvalidData-03444,Missing Model in object %TAG=VARIABLE%s,RM,0,0
+061,null,RM-InvalidData-03443,Missing Vendor in object %TAG=VARIABLE%s,RM,0,0
+# ModifyService, ReserveActivateAssignment, ModifyPathStatus
+070,null,RM-InvalidData-03162,Missing Customer Transport Id in object %TAG=VARIABLE%s,RM,0,0
+# ModifyService, ReserveActivateAssignment, ModifyPortAssignment
+071,null,RM-InvalidData-03120,Missing Billing Account Number in object %TAG=VARIABLE%s,RM,0,0
+# Modify Service
+072,null,RM-InvalidData-03280,Missing Service Location Wire Center in object %TAG=VARIABLE%s,RM,0,0
+073,null,RM-InvalidData-02556,Missing Due Date in object %TAG=VARIABLE%s,RM,0,0
+# ModifyService, ReserveActivateAssignment, ModifyPortAssignment, ModifyPathStatus
+074,null,RM-InvalidData-03167,Missing Order Action in object %TAG=VARIABLE%s,RM,0,0
+075,null,RM-InvalidData-03177,Missing Order Action Number in object %TAG=VARIABLE%s,RM,0,0
+076,null,RM-InvalidData-03132,Missing Order Action Id in object %TAG=VARIABLE%s,RM,0,0
+077,null,RM-InvalidData-03131,Missing Order Action Type in object %TAG=VARIABLE%s,RM,0,0
+# ReserveActivateAssignment, ModifyPortAssignment 
+080,null,RM-InvalidData-03159,Missing Site Id in object %TAG=VARIABLE%s,RM,0,0
+# ReserveActivateAssignment, ModifyPortAssignment, ModifyPathStatus
+081,null,RM-InvalidData-03138,Invalid Network Type in object %TAG=VARIABLE%s,RM,0,0
+# ReserveActivateAssignment
+082,null,RM-InvalidData-03166,Missing Logical Egress Port in object %TAG=VARIABLE%s,RM,0,0
+083,null,RM-InvalidData-03165,Missing aEquipmentTargetId in object %TAG=VARIABLE%s,RM,0,0
+# ReserveActivateAssignment, ModifyPortAssignment
+084,null,RM-InvalidData-03121,Missing DSLAM Id in object %TAG=VARIABLE%s,RM,0,0
+085,null,RM-InvalidData-03122,Missing DSLAM Physical Port in object %TAG=VARIABLE%s,RM,0,0
+086,null,RM-InvalidData-08542,Missing VLAN Id in object %TAG=VARIABLE%s,RM,0,0
+# ReserveActivateAssignment
+087,null,RM-InvalidData-08423,Missing OLT Tid in object %TAG=VARIABLE%s,RM,0,0
+088,null,RM-InvalidData-08426,Missing ONT AID in object %TAG=VARIABLE%s,RM,0,0
+089,null,RM-InvalidData-08936,Missing VPLS Domain in object %TAG=VARIABLE%s,RM,0,0
+# ModifyPortAssignment
+090,null,RM-InvalidData-02054,Missing Circuit Id in object %TAG=VARIABLE%s,RM,0,0
+091,null,RM-InvalidData-03123,Missing VLAN Id in object %TAG=VARIABLE%s,RM,0,0
+092,null,RM-InvalidData-09022,Missing Disconnect Port Indicator in object %TAG=VARIABLE%s,RM,0,0
+# ModifyPathStatus
+100,null,RM-InvalidData-03163,Missing Path Status in object %TAG=VARIABLE%s,RM,0,0
+101,null,RM-InvalidData-08449,Missing OLT VLAN Id in object %TAG=VARIABLE%s,RM,0,0
+102,null,RM-InvalidData-08447,Missing OLT Virtual Path Id in object %TAG=VARIABLE%s,RM,0,0
+103,null,RM-InvalidData-08448,Missing OLT Virtual Channel Id in object %TAG=VARIABLE%s,RM,0,0
+104,null,RM-InvalidData-08935,Missing Service Access Point in object %TAG=VARIABLE%s,RM,0,0
+
+# PublishAutoDiscoveryResults
+110,null,RM-InvalidData-09598,Invalid Component Qualifier entered in object %TAG=VARIABLE%s,RM,0,0
+111,null,RM-InvalidData-09606,Missing Component Serial Number entered in object %TAG=VARIABLE%s,RM,0,0
+112,null,RM-InvalidData-09602,Missing Component Device Id entered in object %TAG=VARIABLE%s,RM,0,0
+113,null,RM-InvalidData-09603,Missing Component Model Number entered in object %TAG=VARIABLE%s,RM,0,0
+114,null,RM-InvalidData-09604,Missing Component Manufacturer entered in object %TAG=VARIABLE%s,RM,0,0
+115,null,RM-InvalidData-09605,Missing Component Material number entered in object %TAG=VARIABLE%s,RM,0,0
+116,null,RM-InvalidData-08788,Invalid STB type entered in object %TAG=VARIABLE%s,RM,0,0
+
+#CreateFacilityAssignment
+125,null,RM-InvalidData-08424,Missing OLT MODEL in object %TAG=VARIABLE%s,RM,0,0
+126,null,RM-InvalidData-08425,Missing ONT ID in object %TAG=VARIABLE%s,RM,0,0
+127,null,RM-InvalidData-08427,Missing ONT Model Number in object %TAG=VARIABLE%s,RM,0,0
+128,null,RM-InvalidData-08428,Missing ONT Port in object %TAG=VARIABLE%s,RM,0,0
+129,null,RM-InvalidData-08429,Missing Segment Number in object %TAG=VARIABLE%s,RM,0,0
+130,null,RM-InvalidData-08430,Missing Terminal ID in object %TAG=VARIABLE%s,RM,0,0
+131,null,RM-InvalidData-08433,Missing In Cable in object %TAG=VARIABLE%s,RM,0,0
+132,null,RM-InvalidData-08434,Missing In pair in object %TAG=VARIABLE%s,RM,0,0
+133,null,RM-InvalidData-08435,Missing DSLAM name in object %TAG=VARIABLE%s,RM,0,0
+134,null,RM-InvalidData-08440,Missing OLT ID in object %TAG=VARIABLE%s,RM,0,0
+135,null,RM-InvalidData-08441,Missing OLT Port in object %TAG=VARIABLE%s,RM,0,0
+136,null,RM-InvalidData-08442,Missing Network Port in object %TAG=VARIABLE%s,RM,0,0
+137,null,RM-InvalidData-08443,Missing Access Port in object %TAG=VARIABLE%s,RM,0,0
+138,null,RM-InvalidData-08444,Missing Fiber Cable in object %TAG=VARIABLE%s,RM,0,0
+139,null,RM-InvalidData-08445,Missing Fiber Strand in object %TAG=VARIABLE%s,RM,0,0,
+140,null,RM-InvalidData-08446,Missing Out Pair Color in object %TAG=VARIABLE%s,RM,0,0
+141,null,RM-InvalidData-09754,Missing NetworkTypeChoice entered in object %TAG=VARIABLE%s,RM,0,0
+142,null,RM-InvalidData-09753,Invalid NetworkTypeChoice entered in object %TAG=VARIABLE%s,RM,0,0
+143,null,RM-InvalidData-09476,Missing the required Address Id in object %TAG=VARIABLE%s,RM,0,0
+144,null,RM-InvalidData-03452,Missing NPA NXX in object %TAG=VARIABLE%s,RM,0,0
+145,null,RM-InvalidData-03277,Missing Service Location House Number in object %TAG=VARIABLE%s,RM,0,0
+146,null,RM-InvalidData-03278,Missing Service Location Street Name in object %TAG=VARIABLE%s,RM,0,0
+
+#SendFacilityAssignmentOrder
+150,null,RM-InvalidData-03129,Missing the required Service Order Number in object %TAG=VARIABLE%s,RM,0,0
+151,null,RM-InvalidData-08603,Missing the required Service Order Correction Suffix  in object %TAG=VARIABLE%s,RM,0,0
+152,null,RM-InvalidData-03132,Missing the required Order Action ID in object %TAG=VARIABLE%s,RM,0,0
+153,null,RM-InvalidData-02560,Missing the required Order Number in object %TAG=VARIABLE%s,RM,0,0
+154,null,RM-InvalidData-03131,Missing the required Order Action Type in object %TAG=VARIABLE%s,RM,0,0
+155,null,RM-InvalidData-03140,Invalid Order Sub-action Type entered in object %TAG=VARIABLE%s,RM,0,0
+156,null,RM-InvalidData-02054,Missing the required Circuit ID in object %TAG=VARIABLE%s,RM,0,0
+157,null,RM-InvalidData-03135,Missing the required Service Location in object %TAG=VARIABLE%s,RM,0,0
+158,null,RM-InvalidData-03277,Missing the required Service Location House Number in object %TAG=VARIABLE%s,RM,0,0
+159,null,RM-InvalidData-03278,Missing the required Service Location Street Name in object %TAG=VARIABLE%s,RM,0,0
+160,null,RM-InvalidData-00936,Missing the required NPANXX in object %TAG=VARIABLE%s,RM,0,0
+161,null,RM-InvalidData-03280,Missing the required Service Location Wire Center in object %TAG=VARIABLE%s,RM,0,0
+162,null,RM-InvalidData-02556,Missing the required Original Due Date in object %TAG=VARIABLE%s,RM,0,0
+163,null,RM-InvalidData-00523,Invalid date: Original Due Date in object %TAG=VARIABLE%s,RM,0,0
+165,null,RM-InvalidData-00523,Invalid date: Application Date in object %TAG=VARIABLE%s,RM,0,0
+166,null,RM-InvalidData-02397,Missing the required Class Of Service in object %TAG=VARIABLE%s,RM,0,0
+167,null,RM-InvalidData-02397,Invalid Class Of Service in object %TAG=VARIABLE%s,RM,0,0
+168,null,RM-InvalidData-03138,Invalid Network Type in object %TAG=VARIABLE%s,RM,0,0
+169,null,RM-InvalidData-03130,Missing the required Network Type in object %TAG=VARIABLE%s,RM,0,0
+170,null,RM-InvalidData-08438,Missing the required Application Date in object %TAG=VARIABLE%s,RM,0,0
+172,null,RM-InvalidData-03139,Invalid required Order Action Type in object %TAG=VARIABLE%s,RM,0,0
+
+#SendFacilityAssignmentOrder
+180,null,RM-InvalidData-10953,Missing required field for Change and Change Amend orders in object %TAG=VARIABLE%s,RM,0,0
+181,null,RM-InvalidData-10954,Missing required field for an order related to bonded pair in object %TAG=VARIABLE%s,RM,0,0
+182,null,RM-InvalidData-03120,Missing required field billing account number in object %TAG=VARIABLE%s,RM,0,0
+
+
+#PublishRGActivation
+190,null,RM-InvalidData-08407,Missing Residential Gateway in object %TAG=VARIABLE%s,RM,0,0
+191,null,RM-InvalidData-03124,Missing required Residential Gateway ID in object %TAG=VARIABLE%s,RM,0,0
+192,null,RM-InvalidData-08406,Missing Firmware Version Number in object %TAG=VARIABLE%s,RM,0,0
+193,null,RM-InvalidData-03444,Missing Model in object %TAG=VARIABLE%s,RM,0,0
+194,null,RM-InvalidData-08405,Missing MAC Address in object %TAG=VARIABLE%s,RM,0,0
+195,null,RM-InvalidData-03443,Missing Vendor in object %TAG=VARIABLE%s,RM,0,0
+196,null,RM-InvalidData-03175,Missing required Activation Time in object %TAG=VARIABLE%s,RM,0,0
+### for Order Action, please use the one use by ModifyService
+
+#
+# Validator system failure.
+null,null,RM-SystemFailure-08699,Validator system failure: %TAG=VARIABLE%s,RM,0,0

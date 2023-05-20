@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:DataValidation xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<Scenario>
+		<Name>ServiceLocation</Name>
+		<Variable>
+			<Name>aServiceLocation</Name> 
+			<ValidationRule>1</ValidationRule> 
+			<ExceptionRule>031</ExceptionRule> 
+			<PathElement>aServiceLocation</PathElement> 
+		</Variable>
+		<Variable>
+			<Name>aServiceLocation.aProviderLocationProperties[0].aServiceAddress.aFieldedAddress.aStreetName</Name> 
+			<ValidationRule>2</ValidationRule> 
+			<ExceptionRule>157</ExceptionRule> 
+			<PathElement>aServiceLocation.aProviderLocationProperties.[].aServiceAddress.theValue().aFieldedAddress().aStreetName.theValue()</PathElement> 
+		</Variable>
+		<Variable>
+			<Name>aServiceLocation.aProviderLocationProperties[0].aPrimaryNpaNxx</Name> 
+			<ValidationRule>2</ValidationRule> 
+			<ExceptionRule>160</ExceptionRule> 
+			<PathElement>aServiceLocation.aProviderLocationProperties.[].aPrimaryNpaNxx.theValue()</PathElement> 
+		</Variable>
+	</Scenario>
+	<Operation>
+        <ValidationRule>1</ValidationRule>
+        <ClassName>com.sbc.eia.bis.validator.NotNullOperation</ClassName>
+	</Operation>
+    <Operation>
+        <ValidationRule>2</ValidationRule>
+        <ClassName>com.sbc.eia.bis.validator.NotEmptyOperation</ClassName>
+    </Operation>
+    <Operation>
+        <ValidationRule>3</ValidationRule>
+        <ClassName>com.sbc.eia.bis.validator.UtilityOperation</ClassName>
+    </Operation>
+</xs:DataValidation>

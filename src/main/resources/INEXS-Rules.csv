@@ -1,0 +1,21 @@
+#Error Code,Error Text to match,RM Error Code,Description,Origin,Severity,BusinessRule,Source Error Name,RM Error Name,Source Description,
+#PIC/LPIC,,,,,,,,,#PIC/LPIC,
+#Oracle Error Message,,BIS Error Code,,,,,,BIS Error Name,#Oracle Error Message,Cause
+#null,ORA-00942,RM-SystemFailure-00130,,INEXS,0,0,null,ERR_RM_INEXS_SQL_EXCEPTION,ORA-00942:  table or view does not exist,"The table or view entered does not exist, or a view referenced where a table is required."
+null,ORA-01014,RM-BusinessViolation-00001,System offline: INEXS.,INEXS,0,0,null,ERR_RM_SYSTEM_OFFLINE,ORA-01014:  ORACLE shutdown in progress,A user tried to log on to ORACLE while an instance shutdown was in progress.
+#null,ORA-01017,RM-SystemFailure-00130,,INEXS,0,0,null,ERR_RM_INEXS_SQL_EXCEPTION,ORA-01017:  invalid username/password; logon denied,An invalid username or password was entered in an attempt to log onto ORACLE.
+null,ORA-01033,RM-BusinessViolation-00001,System offline: INEXS.,INEXS,0,0,null,ERR_RM_SYSTEM_OFFLINE,ORA-01033:  ORACLE initialization or shutdown in progress,An attempt was made to log on while ORACLE is being started up or shutdown.
+null,ORA-01034,RM-BusinessViolation-00001,System offline: INEXS.,INEXS,0,0,null,ERR_RM_SYSTEM_OFFLINE,ORA-01034:  ORACLE not available,Oracle was not started up.
+null,ORA-01071,RM-BusinessViolation-00001,System offline: INEXS.,INEXS,0,0,null,ERR_RM_SYSTEM_OFFLINE,ORA-01071:  cannot perform operation without starting up ORACLE,An attempt was made to perform an operation before ORACLE was started.
+null,ORA-01089,RM-BusinessViolation-00001,System offline: INEXS.,INEXS,0,0,null,ERR_RM_SYSTEM_OFFLINE,ORA-01089:  immediate shutdown in progress - no operations are permitted,"A DBA has issued the SHUTDOWN IMMEDIATE command to shut down a running ORACLE instance, so your operations have been terminated."
+null,ORA-01090,RM-BusinessViolation-00001,System offline: INEXS.,INEXS,0,0,null,ERR_RM_SYSTEM_OFFLINE,ORA-01090:  shutdown in progress - connection is not permitted,"A DBA has issued the SHUTDOWN command to shut down a running ORACLE instance, so you cannot connect to ORACLE."
+null,ORA-01109,RM-BusinessViolation-00001,System offline: INEXS.,INEXS,0,0,null,ERR_RM_SYSTEM_OFFLINE,ORA-01109:  database not open,An attempt was made to perform an operation on an unopened database.
+null,ORA-01154,RM-BusinessViolation-00001,System offline: INEXS.,INEXS,0,0,null,ERR_RM_SYSTEM_OFFLINE,"ORA-01154:  Database busy.  Open, close, mount, and dismount not allowed now",An operation is in progress that requires the database to remain in an opened/mounted state.
+null,ORA-01155,RM-BusinessViolation-00001,System offline: INEXS.,INEXS,0,0,null,ERR_RM_SYSTEM_OFFLINE,"ORA-01155:  the database is being opened, closed, mounted, or dismounted",The requested operation needs the database to be in a particular state but the state is being changed.
+null,ORA-01403,RM-ObjectNotFound-00002,No data found.,INEXS,1,0,null,ERR_RM_RESOURCE_NOT_FOUND,ORA-01403:  no data found,"In a host language program, all records have been fetched."
+null,[Tt][Ii][Mm][Ee][Dd]* *[Oo][Uu][Tt],RM-SystemFailure-00001,Timeout waiting for INEXS response.,INEXS,0,0,null,ERR_RM_TIMEOUT,,
+#null,ORA-03114,RM-SystemFailure-00130,,INEXS,0,0,null,ERR_RM_INEXS_SQL_EXCEPTION,ORA-03114:  not connected to ORACLE,A call to Oracle was attempted when no connection was established.  It may happen if communication trouble causes a disconnection.
+#defualt for INEXS,,,,,,,,,,
+null,null,RM-SystemFailure-00130,INEXS System Failure: ,INEXS,0,0,null,,,
+,,,,,,,,,,
+,,,,,,,,,,

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmsops>
+	<messagingFunctions>
+		<CODESRCRetrieveServiceProvidersForResourceRequest>
+			<shouldRetryOnError>false</shouldRetryOnError>
+			<retryThreshold>2</retryThreshold>
+			<deliver>
+				<messageTag>GetClliCICAvail.rmbis</messageTag>
+				<deliveryMode>nonpersistent</deliveryMode>
+				<messageExpirationMillis>60000</messageExpirationMillis>
+				<messageIDToCorrelationID>true</messageIDToCorrelationID>
+				<responseMessageExpiration>60000</responseMessageExpiration>
+			</deliver>
+			<pickup>
+				<timeToWaitMillis>60000</timeToWaitMillis>
+			</pickup>
+		</CODESRCRetrieveServiceProvidersForResourceRequest>
+	</messagingFunctions>
+</jmsops>

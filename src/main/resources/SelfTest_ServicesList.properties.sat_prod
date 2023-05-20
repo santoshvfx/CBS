@@ -1,0 +1,15 @@
+# $Id: SelfTest_ServicesList.properties.sat_prod,v 1.3.6.1 2011/10/05 21:36:45 gb280s Exp $
+#EMBUS
+#EMBUS_CODESRC=com.sbc.eia.bis.embus.service.codes.access.CodesRCAccessHelper
+#Vicuna
+#VICUNA_CIRCUITPROVISIONING=com.sbc.gwsvcs.service.circuitprovisioning.CircuitProvisioningHelper
+VICUNA_HOSTLOOKUP=com.sbc.gwsvcs.service.hostlookup.HOSTLOOKUPHelper
+VICUNA_SWITCHSERVER=com.sbc.gwsvcs.service.switchserver.SWITCHServerHelper
+#VICUNA_TOPLISTENER=com.sbc.gwsvcs.service.toplistener.TOPLISTENERHelper
+#BIS
+BIS_IOM=false
+BIS_NAM=true
+BIS_SM=true
+#RC
+RC_CODESRC=com.sbc.eia.bis.embus.service.codes.access.CodesRCAccessHelper
+RC_FACSRC=com.sbc.eia.bis.embus.service.facsrc.FACSRCHelper

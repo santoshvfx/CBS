@@ -1,0 +1,4 @@
+#TOPListener Error Code,Error Description,RM-Error Code,Description,Origin,Severity,Business Rule,BIS Error Name
+9004,null,RM-SystemFailure-08272,System Failure- Run Time Error From TOPLISTENER,TOPLISTENER,0,0,ERR_RM_TOPLISTENER_RUN_TIME_ERROR
+7600,null,RM-SystemFailure-08273,System Failure- TOPCOM Error from TOPLISTENER,TOPLISTENER,0,0,ERR_RM_TOPLISTENER_TOPCOM_ERROR
+null,null,RM-SystemFailure-03477,System Failure- Exception from TOPLISTENER,TOPLISTENER,0,0,ERR_RM_TOPLISTENER

@@ -1,0 +1,92 @@
+# @(#)testclient.properties	1.0 00/05/17
+
+#
+# Logger-specific properties follow
+#
+CLASSNAME=com.sbc.eia.bis.facades.testing.rm
+LOGFILE_PATH=RMClient.non271sat.log
+
+#BIS Provider URL
+BIS_PROVIDER_URL=corbaloc::pida3701.pedc.sbc.com:11000,:pida3703.pedc.sbc.com:11000
+
+BIS_HOME=cell/clusters/RM21.60Cluster/RMHome-21.60
+
+# Test Type
+#TARGET_TYPE=OBJECT
+TARGET_TYPE=EJB
+#TARGET_TYPE=PROXY
+#TARGET_TYPE=SOAP
+#TARGET_TYPE=SOAPHTTP
+#TARGET_TYPE=MDB
+#TARGET_TYPE=JMX
+
+THREAD_COUNT=1
+CYCLE_COUNT=1
+SLEEP_TIME=0
+
+# for OBJECT
+BIS_PROPERTIES_PATH=c:\\appl\\eia\\rm\\properties\\rm.properties
+
+# for Vicuna
+# Vicuna Home
+VICUNA_SERVICE_CONFIG_DIR=c:\\appl\\eia\\rm\\properties
+VICUNA_XML_FILE=c:\\vicuna\\etc\\vicunalite.xml
+# Vicuna services APPLDATA
+APPLDATA=
+GWSVCS_CLNTUUID=RMBIS
+
+#RM PROXY APPLDATA
+RMPROXY_APPLDATA=PROD
+
+#MDB Test client properties
+RM_MDB_TEST_CLIENT_CONFIG_FILE_NAME=MDBTestClient.properties
+
+#
+#RMSoacQueue embus service wrapper properties
+#
+RM_TEST_CLIENT_CONFIG_FILE_NAME=test-client-config.xml
+RM_TEST_ENVIRONMENT_NAME=RM_TEST_SOAC
+OSS_PUBLIC_KEY=bossApplData1
+
+# SOAFI PROXY properties
+SOAFI_LDAP=ldap://pida3704.pedc.sbc.com:4299/t=jms,c=us
+USER_NAME=M18846t
+PASSWORD=VVADt>8\u0008/\u0002E+\u007F/\u0005"N
+CONNECTION_FACTORY=cn=rmeitQCF,ou=21_60,ou=rm,o=bis
+REQUESET_QUEUE=cn=resourceManagement,ou=21_60,ou=rm,o=bis
+#REPLY_TO_QUEUE=temp
+#WAIT_TIME=120000
+
+#JMX
+#LOOKUP_TYPE= "cluster" or "server" or "direct"
+#PORT=the value of SOAP_CONNECTOR_ADDRESS
+LOOKUP_TYPE=server
+PORT=8882
+MBEAN_IDENTIFIER=WebSphere:mbeanIdentifier=BISTestMBean,*
+JMX_TIMEOUT=60
+SERVER_NAME=server1
+
+# SOAP/HTTP
+LOGGING_KEY=SM-NONE
+SERVICE_LOCATOR=http://mwsoapproxynon271eit.sbc.com/Rm21.60SoapHttpWeb/servlet/SoapAdapterServlet
+
+
+#DTD_URL=http://cscim1.sbc.com/eia/BISFacade/DTD/v1.4/
+
+# BIS_CONTEXT fields
+#BIS_CONTEXT_Application=LSPWEST
+BIS_CONTEXT_Application=00.00
+BIS_CONTEXT_CustomerName=ccma
+BIS_CONTEXT_UserID=sl2917
+BIS_CONTEXT_Password=none_ya
+BIS_CONTEXT_LoggingInformation=huh
+#BIS_CONTEXT_ServiceCenter=IL
+
+#
+# TestCase Information
+# Each test case is specified in the format:
+#	TESTCASEn=TEST_CASE_CLASS_NAME|test-case-specific-pipe-delimited-parameter-list
+# TEST_CASE_COUNT should be the same number as 'n' in TESTCASEn.
+#
+TEST_CASE_COUNT=15
+

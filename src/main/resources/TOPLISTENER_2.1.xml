@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<vicuna>
+	<propertyList>
+		<TOPLISTENER>
+			<directory>
+				<search>
+					<service TYPE="STRING">C=US,O=SBC,OU=GWSvcs,CN=TOPListener</service>
+					<version TYPE="STRING">2.1</version>
+				</search>
+				<selection>
+					<cacheDuration TYPE="USHORT">600</cacheDuration>
+				</selection>
+			</directory>
+		</TOPLISTENER>
+		<EventList>
+			<commHandle>
+				<protocol>
+					<profile>
+						<events>
+							<TOPLISTENER_REQ>
+								<__id TYPE="LONG">6000</__id>
+								<TOPLISTENER_RESP>
+									<__id TYPE="LONG">6001</__id>
+								</TOPLISTENER_RESP>
+								<EXCEPTION>
+									<__id TYPE="LONG">9999</__id>
+								</EXCEPTION>
+							</TOPLISTENER_REQ>
+						</events>
+					</profile>
+				</protocol>
+			</commHandle>
+		</EventList>
+		<accept>
+			<stream>
+				<MTCPDriver>
+					<Attach TYPE="STRING"></Attach>
+				</MTCPDriver>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</accept>
+		<listen>
+			<transport TYPE="STRING">MTCPAcceptor</transport>
+			<stream>
+				<MTCPAcceptor>
+					<Listen>
+						<LocalAddress TYPE="STRING">127.0.0.1:80</LocalAddress>
+						<Family TYPE="LONG">2</Family>
+					</Listen>
+				</MTCPAcceptor>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</listen>
+	</propertyList>
+</vicuna>

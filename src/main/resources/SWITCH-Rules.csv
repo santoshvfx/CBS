@@ -1,0 +1,43 @@
+#Error Code,Error Text to match,RM Error Code,Description,Origin,Severity,BusinessRule,Source Error Name,RM Error Name,Source Description
+#W001-001,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER,
+#W002-001,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER,
+#W003-001,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER,
+#W004-001,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER,
+W101-87,null,N/A,,SWITCHSERVER,,,,N/A,
+W101-105,null,RM-ObjectNotFound-00131,Object Not Found: no record found,SWITCHSERVER,0,3,null,ERR_RM_DATA_NOT_FOUND,
+W101-359,null,RM-ObjectNotFound-00131,Object Not Found: no record found,SWITCHSERVER,0,3,null,ERR_RM_DATA_NOT_FOUND,
+W103-001,null,RM-ObjectNotFound-00131,Object Not Found: no record found,SWITCHSERVER,0,3,null,ERR_RM_DATA_NOT_FOUND,
+#W200-600,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER,
+W801-030,null,N/A,,SWITCHSERVER,,,,N/A,
+W801-709,null,RM-ObjectNotFound-00131,Object Not Found: no record found,SWITCHSERVER,0,3,null,ERR_RM_DATA_NOT_FOUND,
+W801-490,null,RM-ObjectNotFound-00131,Object Not Found: no record found,SWITCHSERVER,0,3,null,ERR_RM_DATA_NOT_FOUND,
+#W801-491,null,N/A,,SWITCHSERVER,0,0,null,N/A,
+#W901,null,N/A,,SWITCHSERVER,0,0,null,N/A,
+2003,null,RM-ObjectNotFound-00131,Object Not Found: invalid input,SWITCHSERVER,0,0,null,ERR_RM_DATA_NOT_FOUND,
+2004,null,RM-ObjectNotFound-00131,Object Not Found: invalid input,SWITCHSERVER,0,0,null,ERR_RM_DATA_NOT_FOUND
+2110,null,RM-ObjectNotFound-00131,Object Not Found: invalid input,SWITCHSERVER,0,0,null,ERR_RM_DATA_NOT_FOUND
+#7500,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#7550,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9000,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9003,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9004,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9005,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9008,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9009,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9011,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9012,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9013,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9014,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9015,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9020,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9023,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9030,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9040,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+#9100,null,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+9200,null,RM-BusinessViolation-00001,System offline: SwitchServer.,SWITCHSERVER,0,0,null,ERR_RM_SYSTEM_OFFLINE
+30,null,RM-BusinessViolation-00001,System offline: SwitchServer.,SWITCHSERVER,0,0,null,ERR_RM_SYSTEM_OFFLINE
+null,[Dd][Oo][Ww][Nn]* *[Tt][Ii][Mm][Ee],RM-BusinessViolation-00001,System offline: SwitchServer.,SWITCHSERVER,0,0,null,ERR_RM_SYSTEM_OFFLINE
+null,[Tt][Ii][Mm][Ee][Dd]* *[Oo][Uu][Tt],RM-SystemFailure-00001,Timeout waiting for SwitchServer response.,SWITCHSERVER,0,0,null,ERR_RM_TIMEOUT
+#null,IMP005E,RM-SystemFailure-00778,System Failure: ,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER
+# default,,,,,,,,
+null,null,RM-SystemFailure-00778,System Failure: SwitchServer problem.,SWITCHSERVER,0,0,null,ERR_RM_SWITCHSERVER

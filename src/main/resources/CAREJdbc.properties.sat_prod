@@ -1,0 +1,18 @@
+#
+# JDBC Parameters
+#
+#jdbcDRIVER=COM.ibm.db2.jdbc.app.DB2Driver
+jdbcDRIVER=com.ibm.db2.jcc.DB2Driver
+jdbcDATA_SOURCE_NAME=jdbc/DB26
+#jdbcURL=jdbc:db2:DB26
+jdbcURL=jdbc:db2://DB26IP80.MVS.SBC.COM:5006/USSNET_DB26
+jdbcUSERID=m61608
+jdbcPASSWORD=VZAJs>8\u0008/+<+E/\u0005"N
+#jdbcUSE_CONNECTION_POOL=DATASOURCE
+jdbcUSE_CONNECTION_POOL=JDBCDRIVER
+
+# CARE table space
+TABLE_SPACE=db2ce101
+
+# Vicuna services APPLDATA
+OSS_PUBLIC_KEY=bossApplData1

@@ -1,0 +1,161 @@
+<?xml version="1.0"?>
+<vicuna>
+	<propertyList>
+		<CIRCUITPROVISIONING>
+			<directory>
+				<search>
+					<service TYPE="STRING">C=US,O=SBC,OU=GWSvcs,CN=CircuitProvisioning</service>
+					<version TYPE="STRING">10.0</version>
+				</search>
+				<selection>
+					<cacheDuration TYPE="USHORT">3600</cacheDuration>
+				</selection>
+			</directory>
+		</CIRCUITPROVISIONING>
+		<EventList>
+			<commHandle>
+				<protocol>
+					<profile>
+						<events>
+							<TIRKS_CXRS_QI>
+								<__id TYPE="LONG">12001</__id>
+								<TIRKS_CXRS_QO>
+									<__id TYPE="LONG">12001</__id>
+								</TIRKS_CXRS_QO>
+								<TIRKS_ERROR>
+									<__id TYPE="LONG">20</__id>
+								</TIRKS_ERROR>
+								<GENERAL_SERVICE_ERROR>
+									<__id TYPE="LONG">120</__id>
+								</GENERAL_SERVICE_ERROR>
+								<NO_SERVICE_AVAIL_ERROR>
+									<__id TYPE="LONG">220</__id>
+								</NO_SERVICE_AVAIL_ERROR>
+								<FATAL_ERROR>
+									<__id TYPE="LONG">320</__id>
+								</FATAL_ERROR>
+							</TIRKS_CXRS_QI>
+							<TIRKS_DRI_QI>
+								<__id TYPE="LONG">13001</__id>
+								<TIRKS_DRI_QO>
+									<__id TYPE="LONG">13001</__id>
+								</TIRKS_DRI_QO>
+								<TIRKS_ERROR>
+									<__id TYPE="LONG">20</__id>
+								</TIRKS_ERROR>
+								<GENERAL_SERVICE_ERROR>
+									<__id TYPE="LONG">120</__id>
+								</GENERAL_SERVICE_ERROR>
+								<NO_SERVICE_AVAIL_ERROR>
+									<__id TYPE="LONG">220</__id>
+								</NO_SERVICE_AVAIL_ERROR>
+								<FATAL_ERROR>
+									<__id TYPE="LONG">320</__id>
+								</FATAL_ERROR>
+							</TIRKS_DRI_QI>
+							<TIRKS_EQPSC_QI>
+								<__id TYPE="LONG">15001</__id>
+								<TIRKS_EQPSC_QO>
+									<__id TYPE="LONG">15001</__id>
+								</TIRKS_EQPSC_QO>
+								<TIRKS_ERROR>
+									<__id TYPE="LONG">20</__id>
+								</TIRKS_ERROR>
+								<GENERAL_SERVICE_ERROR>
+									<__id TYPE="LONG">120</__id>
+								</GENERAL_SERVICE_ERROR>
+								<NO_SERVICE_AVAIL_ERROR>
+									<__id TYPE="LONG">220</__id>
+								</NO_SERVICE_AVAIL_ERROR>
+								<FATAL_ERROR>
+									<__id TYPE="LONG">320</__id>
+								</FATAL_ERROR>
+							</TIRKS_EQPSC_QI>
+							<TIRKS_RDLOC_QI>
+								<__id TYPE="LONG">22001</__id>
+								<TIRKS_RDLOC_QO>
+									<__id TYPE="LONG">22001</__id>
+								</TIRKS_RDLOC_QO>
+								<TIRKS_ERROR>
+									<__id TYPE="LONG">20</__id>
+								</TIRKS_ERROR>
+								<GENERAL_SERVICE_ERROR>
+									<__id TYPE="LONG">120</__id>
+								</GENERAL_SERVICE_ERROR>
+								<NO_SERVICE_AVAIL_ERROR>
+									<__id TYPE="LONG">220</__id>
+								</NO_SERVICE_AVAIL_ERROR>
+								<FATAL_ERROR>
+									<__id TYPE="LONG">320</__id>
+								</FATAL_ERROR>
+							</TIRKS_RDLOC_QI>
+							<TIRKS_WA_QI>
+								<__id TYPE="LONG">27001</__id>
+								<TIRKS_WA_QO>
+									<__id TYPE="LONG">27001</__id>
+								</TIRKS_WA_QO>
+								<TIRKS_ERROR>
+									<__id TYPE="LONG">20</__id>
+								</TIRKS_ERROR>
+								<GENERAL_SERVICE_ERROR>
+									<__id TYPE="LONG">120</__id>
+								</GENERAL_SERVICE_ERROR>
+								<NO_SERVICE_AVAIL_ERROR>
+									<__id TYPE="LONG">220</__id>
+								</NO_SERVICE_AVAIL_ERROR>
+								<FATAL_ERROR>
+									<__id TYPE="LONG">320</__id>
+								</FATAL_ERROR>
+							</TIRKS_WA_QI>
+							<TIRKS_CBLS_QI>
+								<__id TYPE="LONG">32001</__id>
+								<TIRKS_CBLS_QO>
+									<__id TYPE="LONG">32001</__id>
+								</TIRKS_CBLS_QO>
+								<TIRKS_ERROR>
+									<__id TYPE="LONG">20</__id>
+								</TIRKS_ERROR>
+								<GENERAL_SERVICE_ERROR>
+									<__id TYPE="LONG">120</__id>
+								</GENERAL_SERVICE_ERROR>
+								<NO_SERVICE_AVAIL_ERROR>
+									<__id TYPE="LONG">220</__id>
+								</NO_SERVICE_AVAIL_ERROR>
+								<FATAL_ERROR>
+									<__id TYPE="LONG">320</__id>
+								</FATAL_ERROR>
+							</TIRKS_CBLS_QI>
+						</events>
+						<svcData>
+							<responseTimeToWait TYPE="LONG">8000</responseTimeToWait>
+						</svcData>
+					</profile>
+				</protocol>
+			</commHandle>
+		</EventList>
+		<accept>
+			<stream>
+				<MTCPDriver>
+					<Attach TYPE="STRING"></Attach>
+				</MTCPDriver>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</accept>
+		<listen>
+			<transport TYPE="STRING">MTCPAcceptor</transport>
+			<stream>
+				<MTCPAcceptor>
+					<Listen>
+						<LocalAddress TYPE="STRING">127.0.0.1:80</LocalAddress>
+						<Family TYPE="LONG">2</Family>
+					</Listen>
+				</MTCPAcceptor>
+			</stream>
+			<protocol>
+				<name TYPE="STRING">DG3X</name>
+			</protocol>
+		</listen>
+	</propertyList>
+</vicuna>

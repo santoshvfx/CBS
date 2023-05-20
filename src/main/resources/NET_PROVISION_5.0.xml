@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmsops>
+	<messagingFunctions>
+		<NpRequestList>
+			<shouldRetryOnError>false</shouldRetryOnError>
+			<retryThreshold>2</retryThreshold>
+			<deliver>
+				<messageTag>Request</messageTag>
+				<deliveryMode>nonpersistent</deliveryMode>
+				<messageExpirationMillis>72000</messageExpirationMillis>
+				<responseMessageExpiration>310000</responseMessageExpiration>
+				<messageIDToCorrelationID>false</messageIDToCorrelationID>		
+			</deliver>
+			<pickup>
+				<timeToWaitMillis>310000</timeToWaitMillis>
+			</pickup>
+		</NpRequestList>
+	</messagingFunctions>
+</jmsops>

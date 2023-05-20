@@ -1,0 +1,28 @@
+#Error Code,Error Text to match,RM Error Code,Description,Origin,Severity,BusinessRule,Source Error Name,RM Error Name,Source Description
+#APTOSServer Error Code,,BIS Error Code,,,,,,BIS Error Name,APTOSServer Description
+2003,null,RM-ObjectNotFound-00002,Service Not Found.,APTOSServer,1,0,null,ERR_RM_RESOURCE_NOT_FOUND,Required field missing:
+2004,null,RM-ObjectNotFound-00002,Service Not Found.,APTOSServer,1,1,null,ERR_RM_RESOURCE_NOT_FOUND,Information Not Available:
+2110,null,RM-ObjectNotFound-00002,Service Not Found.,APTOSServer,1,0,null,ERR_RM_RESOURCE_NOT_FOUND,Data not found in OSSGW database.
+5000,null,RM-BusinessViolation-00001,System offline: APTOS,APTOSServer,1,0,null,ERR_RM_SYSTEM_OFFLINE,APTOS database is down or not open
+#9000,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,RogueWave Exception:
+#9003,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,Data Communications Error to:
+#9004,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,Internal error.
+#9005,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,Transaction Aborted; Reason:
+#9008,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,Internal Error.
+#9009,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,Service Startup Error:
+#9011,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,Internal error.
+#9012,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,Internal error.
+#9013,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,Internal error.
+#9014,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,Internal error.
+#9015,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,Internal error.
+#9020,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,Missing Environment Variable:
+#9021,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,Password 
+#9023,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,Invalid Environment variable:
+#9030,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,Listen Exception:
+#9040,null,RM-SystemFailure-00129,,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,Internal Error.
+9200,null,RM-BusinessViolation-00001,System offline: APTOS,APTOSServer,1,0,null,ERR_RM_SYSTEM_OFFLINE,The system is not available at this time.
+30,null,RM-BusinessViolation-00001,System offline: APTOS,APTOSServer,1,0,null,ERR_RM_SYSTEM_OFFLINE,Datagate Server Offline
+null,[Tt][Ii][Mm][Ee][Dd]* *[Oo][Uu][Tt],RM-SystemFailure-00001,Timeout waiting for APTOS response.,APTOSServer,0,0,null,ERR_RM_TIMEOUT,
+null,MDG3xProtocol.pack:,RM-ObjectNotFound-00002,Service Not Found.,APTOSServer,1,0,null,ERR_RM_RESOURCE_NOT_FOUND,MDG3xProtocol.pack: %s
+#default rule,,,,,,,null,,
+null,null,RM-SystemFailure-00129,APTOSServer System Error.,APTOSServer,0,0,null,ERR_RM_APTOSSERVER,

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmsops>
+	<messagingFunctions>
+		<OmsRequest>
+			<shouldRetryOnError>false</shouldRetryOnError>
+			<retryThreshold>2</retryThreshold>
+			<messageTag>Request</messageTag>
+			<deliveryMode>persistent</deliveryMode>
+			<messageExpirationMillis>7200000</messageExpirationMillis>		
+		</OmsRequest>
+	</messagingFunctions>
+</jmsops>
+

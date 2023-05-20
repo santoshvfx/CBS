@@ -1,0 +1,5 @@
+#Error Code,Error Text to match,RM Error Tag,Description,Origin,Severity,BusinessRule,Source Error Name,RM Error Name
+07019803,null,RM-SystemFailure-11393,Exception from CPSOS ,CPSOS,0,0,null,ERR_RM_NOT_AUTHORIZE_USER_TO_CPSOS
+07019201,null,RM-SystemFailure-11393,Exception from CPSOS ,CPSOS,0,0,null,ERR_RM_NOT_AUTHORIZE_USER_TO_CPSOS
+07019121,null,RM-SystemFailure-11393,Exception from CPSOS ,CPSOS,0,0,null,ERR_RM_NOT_AUTHORIZE_USER_TO_CPSOS
+null,null,RM-SystemFailure-00521,Exception from CPSOS ,CPSOS,0,0,null,ERR_RM_SF_NOT_AUTHORIZE_TO_CPSOS

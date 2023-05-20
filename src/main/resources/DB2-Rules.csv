@@ -1,0 +1,36 @@
+#Error Code,Error Text to match,RM Error Code,Description,Origin,Severity,BusinessRule,Source Error Name,RM Error Name,Source Description
+#SQLSTATE,,BIS Error Code,,,,,,BIS Error Name,Error Event Description
+#1002,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Disconnect error
+#8001,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Unable to connect to data source
+8003,null,RM-BusinessViolation-00001,System offline: %TAG=SYSTEM%s.,null,0,0,null,ERR_RM_SYSTEM_OFFLINE,Connection is closed
+#8004,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,The application server rejected establishment of the connection.
+#21S01,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Insert value list does not match column list
+#22002,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Invalid Output
+#22005,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Error in assignment
+#22007,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Invalid datetime format
+#22018,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Invalid character value for cast specification
+#23000,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Integrity constraint violation
+#44000,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Integrity constraint violation
+#25000,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Invalid transaction state
+#25501,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Invalid transaction state
+#28000,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Invalid authorization specification
+#40003,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Communication link failure
+#08S01,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Communication link failure
+#42xxx,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Syntax Error or Access Rule Violation
+#004,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Unexpected system failure
+#HY000,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,General error
+#HY008,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Operation was cancelled
+#HY010,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Function sequence error
+#HY011,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Operation invalid at this time
+#HY012,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Invalid transaction code.
+#HY024,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Invalid attribute value
+#HY105,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Invalid parameter type
+#HY109,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Invalid cursor position
+#HY501,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Invalid data source name
+#HY503,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Invalid file name length
+#HY506,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Error closing a file
+#HY509,null,RM-SystemFailure-00163,null,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,Error deleting a file
+HYT00,null,RM-SystemFailure-00001,System timeout: %TAG=SYSTEM%s.,null,0,0,null,ERR_RM_TIMEOUT,Timeout expired
+null,[Tt][Ii][Mm][Ee][Dd]* *[Oo][Uu][Tt],RM-SystemFailure-00001,System timeout: %TAG=SYSTEM%s.,null,0,0,null,ERR_RM_TIMEOUT,
+#default,,,,,,,,,
+null,null,RM-SystemFailure-00163,%TAG=SYSTEM%s System Error.,null,0,0,null,ERR_RM_LASR_SQL_EXCEPTION,

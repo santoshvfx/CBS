@@ -1,0 +1,5 @@
+#SOA Error Code,Error Description,RM-Error Code,Description,Origin,Severity,Business Rule,BIS Error Name,,,,,
+JAXB-99999,null,RM-SystemFailure-03530,System Failure- BIS to SOA xml encoder exception,RM BIS,0,0,ERR_RM_CREATE_EMBUS_SERVICE_REQUEST,,,,,BIS to SOA xml encoder exception
+null,[Tt][Ii][Mm][Ee][Dd]*[ ]*[Oo][Uu][Tt],RM-SystemFailure-09027,Timeout while connecting to SOA,SOA,0,0,ERR_RM_SOA_TIME_OUT,,,,,
+DEFAULT:1,null,RM-SystemFailure-09028,Error in SOA Service access,SOA,0,0,ERR_RM_SOA_SERVICE_ACCESS_FAILURE,,,,,
+null,null,RM-SystemFailure-09028,Failure sending msg to SBCT SOA,SOA,0,0,ERR_RM_SOA_SERVICE_ACCESS_FAILURE,,,,,

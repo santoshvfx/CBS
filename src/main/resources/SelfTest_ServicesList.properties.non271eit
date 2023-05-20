@@ -1,0 +1,12 @@
+# $Id: SelfTest_ServicesList.properties.non271eit,v 1.4 2009/08/04 00:43:14 lg4542 Exp $
+#EMBUS
+EMBUS_CODESRC=com.sbc.eia.bis.embus.service.codes.access.CodesRCAccessHelper
+#Vicuna
+#VICUNA_CIRCUITPROVISIONING=com.sbc.gwsvcs.service.circuitprovisioning.CircuitProvisioningHelper
+VICUNA_HOSTLOOKUP=com.sbc.gwsvcs.service.hostlookup.HOSTLOOKUPHelper
+VICUNA_SWITCHSERVER=com.sbc.gwsvcs.service.switchserver.SWITCHServerHelper
+VICUNA_TOPLISTENER=com.sbc.gwsvcs.service.toplistener.TOPLISTENERHelper
+#BIS
+BIS_IOM=false
+BIS_NAM=true
+BIS_SM=true

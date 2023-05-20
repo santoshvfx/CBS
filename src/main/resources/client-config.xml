@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmsops>
+	<messagingFunctions>
+		<OMSRequest>
+			<shouldRetryOnError>false</shouldRetryOnError>
+			<retryThreshold>2</retryThreshold>
+			<messageTag>Request</messageTag>
+			<deliveryMode>persistent</deliveryMode>
+			<messageExpirationMillis>7200000</messageExpirationMillis>		
+		</OMSRequest>
+		<BBNMSRequest>
+			<shouldRetryOnError>false</shouldRetryOnError>
+			<retryThreshold>2</retryThreshold>
+			<messageTag>Request</messageTag>
+			<deliveryMode>persistent</deliveryMode>
+			<messageExpirationMillis>7200000</messageExpirationMillis>		
+		</BBNMSRequest>		
+		<AMSSRequest>
+			<shouldRetryOnError>false</shouldRetryOnError>
+			<retryThreshold>2</retryThreshold>
+			<messageTag>Request</messageTag>
+			<deliveryMode>persistent</deliveryMode>
+			<messageExpirationMillis>7200000</messageExpirationMillis>		
+		</AMSSRequest>	
+		<FIRSTRequest>
+			<shouldRetryOnError>false</shouldRetryOnError>
+			<retryThreshold>2</retryThreshold>
+			<messageTag>Request</messageTag>
+			<deliveryMode>persistent</deliveryMode>
+			<messageExpirationMillis>7200000</messageExpirationMillis>		
+		</FIRSTRequest>					
+		<mobilityCSIRequest>
+			<shouldRetryOnError>false</shouldRetryOnError>
+			<retryThreshold>2</retryThreshold>
+			<messageTag>Request</messageTag>
+			<deliveryMode>persistent</deliveryMode>
+			<messageExpirationMillis>7200000</messageExpirationMillis>		
+		</mobilityCSIRequest>					
+		<RMRequest>
+			<shouldRetryOnError>false</shouldRetryOnError>
+			<retryThreshold>2</retryThreshold>
+			<messageTag>Request</messageTag>
+			<deliveryMode>persistent</deliveryMode>
+			<messageExpirationMillis>7200000</messageExpirationMillis>		
+		</RMRequest>			
+	</messagingFunctions>
+</jmsops>
+

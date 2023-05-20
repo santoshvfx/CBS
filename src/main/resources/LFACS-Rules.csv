@@ -1,0 +1,87 @@
+#Error Code,Error Text to match,RM Error Code,Description,Origin,Severity,BusinessRule,Source Error Name,RM Error Name,Source Description
+#null,L400-002,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR,
+null,L400-010,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,An invalid entry was found in one of the input fields. 
+null,L400-050,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,An exact match for the specified address was not found in the data base.
+null,L400-055,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,An exact match for the specified cable <cable> was not found in the database.
+null,L400-080,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,An exact match was not found for the wire center name <wc>.
+null,L400-090,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,A required input field <field> was left blank.
+null,L400-100,RM-InvalidData-00179,Invalid Data:  Invalid Street Name.,LFACS,0,0,null,ERR_RM_INVALID_STREET_NAME,An exact match for the specified street name  <street> was not found in the data base.
+null,L400-170,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,
+null,L400-171,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,
+null,L400-192,RM-InvalidData-00179,Invalid Data:  Invalid Street Name.,LFACS,0,0,null,ERR_RM_INVALID_STREET_NAME,Loop Qual error
+null,L400-220,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,An exact match for the specified terminal address was not found in the database.
+null,L400-290,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,
+null,L400-310,RM-InvalidData-00180,Invalid Data:  Invalid Street Number.,LFACS,0,0,null,ERR_RM_INVALID_STREET_NUMBER,
+null,L400-318,RM-InvalidData-00179,Invalid Data:  Invalid Street Name.,LFACS,0,0,null,ERR_RM_INVALID_STREET_NAME,
+null,L400-320,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,
+null,L400-330,RM-InvalidData-00179,Invalid Data:  Invalid Street Name.,LFACS,0,0,null,ERR_RM_INVALID_STREET_NAME,
+null,L400-417,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,
+null,L410-301,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,
+null,L410-302,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,
+null,L410-303,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,
+null,L500-003,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,
+null,L500-185,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,
+null,L500-235,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,Data missing/not entered on input transaction
+null,L550-035,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,
+null,L550-037,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,
+null,L410-359,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,
+null,L410-362,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,
+null,L900-011,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND,
+#null,FACX000E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR,
+#null,FACS001E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR,
+#null,FACS002X,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR,
+#null,FACS003E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+#null,FACS004E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+#null,FACS005E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+null,FACS006I,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND
+null,FACS007I,RM-BusinessViolation-00001,System offline: LFACS,LFACS,0,0,null,ERR_RM_SYSTEM_OFFLINE
+null,FACS008E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+#null,FACS009I,,,,,,,
+null,FACS010E,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND
+#null,FACS011E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+null,FACS012E,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND
+#null,FACS013E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+#null,FACS015E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+null,FACS016E,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND
+null,FACS017E,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND
+null,FACS018E,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND
+null,FACS019E,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND
+null,FACS020E,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND
+#null,FACS021E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+#null,FACS022E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+#null,FACS023E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+#null,FACS024E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+#null,FACS025E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+#null,FACS026E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+#null,FACS027E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+#null,FACS028I,,,,,,,
+#null,FACS029I,,,,,,,
+#null,FACS030E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+#null,FACS031I,,,,,,,
+#null,FACS032I,,,,,,,
+#null,FACS033I,,,,,,,
+#null,FACS034I,,,,,,,
+null,FACS035E,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND
+null,FACS036E,RM-InvalidData-00021,Invalid Data: Invalid Service Quantity,LFACS,0,0,null,ERR_RM_INVALID_SERVICE_QUANTITY
+#null,FACS037I,,,,,,,
+null,FACS038E,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND
+#null,FACS039I,,,,,,,
+#null,FACS041I,,,,,,,
+#null,FACS042I,,,,,,,
+#null,FACS043I,,,,,,,
+#null,FACS044I,,,,,,,
+#null,FACS045E,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR
+null,FACS046E,RM-InvalidData-00176,Invalid Data: Invalid Working Telephone Number.,LFACS,0,0,null,ERR_RM_INVALID_WORKING_TELEPHONE_NUMBER
+#null,FACS047I,,,,,,,
+#null,FACS048I,,,,,,,
+null,H_Wait,RM-SystemFailure-00001,Timeout waiting for LFACS response.,LFACS,0,0,null,ERR_RM_TIMEOUT
+null,CMDLIN WC NOT IN TABLE,RM-ObjectNotFound-00131,Object Not Found: Invalid input to LFACS.,LFACS,0,0,null,ERR_RM_DATA_NOT_FOUND
+null,[Dd][Oo][Ww][Nn]* *[Tt][Ii][Mm][Ee],RM-BusinessViolation-00001,System offline: LFACS,LFACS,0,0,null,ERR_RM_SYSTEM_OFFLINE
+null,down period,RM-BusinessViolation-00001,System offline: LFACS,LFACS,0,0,null,ERR_RM_SYSTEM_OFFLINE
+null,[Tt][Ii][Mm][Ee][Dd]* *[Oo][Uu][Tt],RM-SystemFailure-00001,Timeout waiting for LFACS response.,LFACS,0,0,null,ERR_RM_TIMEOUT
+9200,null,RM-BusinessViolation-00001,System offline: LFACS,LFACS,0,0,null,ERR_RM_SYSTEM_OFFLINE
+30,null,RM-BusinessViolation-00001,System offline: LFACS,LFACS,0,0,null,ERR_RM_SYSTEM_OFFLINE
+null,Service not available,RM-BusinessViolation-00001,System offline: LFACS,LFACS,0,0,null,ERR_RM_SYSTEM_OFFLINE
+null,downtime,RM-BusinessViolation-00001,System offline: LFACS,LFACS,0,0,null,ERR_RM_SYSTEM_OFFLINE
+# default rule,,,,,,,,
+null,null,RM-SystemFailure-00049,System Failure: LFACS System Error.,LFACS,0,0,null,ERR_RM_LFACS_ERROR

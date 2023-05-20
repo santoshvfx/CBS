@@ -1,0 +1,92 @@
+<schema targetNamespace="http://cio.att.com/commonheader/v3" elementFormDefault="qualified"
+    xmlns:ch="http://cio.att.com/commonheader/v3"
+    xmlns="http://www.w3.org/2001/XMLSchema">
+   <!--  =================================================================== -->
+   <!--  Version 3.1 - Added WSEnterpriseLogging and WSResponseMessageExpiration      -->
+   <!--                        for EMBus support  - Only EMBus sevices should use these elements  -->
+   <!--                        Note: This version is upwardly compatible with Version 3.0                   -->
+   <!--  =================================================================== -->
+   <element name="WSCallback">
+      <complexType>
+         <sequence>
+            <element name="URL" type="string" />
+            <element ref="ch:WSCorrelationId" minOccurs="0" />
+         </sequence>
+      </complexType>
+   </element>
+   <element name="WSContext">
+      <complexType>
+         <sequence>
+            <element name="WSNameValue" minOccurs="0" maxOccurs="unbounded">
+               <complexType>
+                  <sequence>
+                     <element name="Name" type="string" />
+                     <element name="Value" type="string" />
+                  </sequence>
+               </complexType>
+            </element>
+         </sequence>
+      </complexType>
+   </element>
+   <element name="WSCorrelationId" type="string" />
+   <element name="WSConversationId" type="string" />
+   <element name="WSEndUserToken">
+      <complexType>
+         <sequence>
+            <element name="Token" type="string" minOccurs="0" />
+            <element name="TokenType" type="string" minOccurs="0" />
+         </sequence>
+      </complexType>
+   </element>
+   <element name="WSEnterpriseLogging">
+      <complexType>
+         <sequence>
+            <element name="ApplicationID" type="string" minOccurs="0" />
+            <element name="LoggingKey" type="string" minOccurs="0" />
+         </sequence>
+      </complexType>
+   </element>
+   <element name="WSException">
+      <complexType>
+         <sequence>
+            <element name="Message" type="string" />
+            <element name="ErrorCode" type="string" />
+         </sequence>
+      </complexType>
+   </element>
+   <element name="WSMessageData">
+      <complexType>
+         <sequence>
+            <element name="MessageId" type="string" minOccurs="0" />
+            <element name="RefToMessageId" type="string" minOccurs="0" />
+            <element name="Timestamp" type="dateTime" minOccurs="0" />
+         </sequence>
+      </complexType>
+   </element>
+   <element name="WSResponseMessageExpiration" type="long" />
+   <element name="WSHeader">
+      <complexType>
+         <sequence>
+            <element ref="ch:WSEndUserToken" minOccurs="0" />
+            <element ref="ch:WSContext" minOccurs="0" />
+            <element ref="ch:WSCallback" minOccurs="0" />
+            <element ref="ch:WSConversationId" minOccurs="0" />
+            <element ref="ch:WSMessageData" minOccurs="0" />
+            <element ref="ch:WSResponseMessageExpiration" minOccurs="0" />
+            <element ref="ch:WSEnterpriseLogging" minOccurs="0" />
+         </sequence>
+      </complexType>
+   </element>
+   <element name="WSResponseHeader">
+      <complexType>
+         <sequence>
+            <element ref="ch:WSContext" minOccurs="0" />
+            <element ref="ch:WSCorrelationId" minOccurs="0" />
+            <element ref="ch:WSConversationId" minOccurs="0" />
+            <element ref="ch:WSMessageData" minOccurs="0" />
+            <element ref="ch:WSEnterpriseLogging" minOccurs="0" />
+         </sequence>
+      </complexType>
+   </element>
+</schema>
+

@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<vicuna>
+    <propertyList>
+        <SWITCHSERVER>
+            <directory>
+                <search>
+                    <service TYPE="STRING">C=US,O=PB,OU=OSSGW,CN=SWITCHServer</service>
+                    <version TYPE="STRING">11.0</version>
+                </search>
+                <selection>
+                    <cacheDuration TYPE="USHORT">600</cacheDuration>
+                </selection>
+            </directory>
+        </SWITCHSERVER>
+        <EventList>
+            <commHandle>
+                <protocol>
+                    <profile>
+                        <events>
+                            <SWITCH_TN_INQ_REQ>
+                                <__id TYPE="LONG">5000</__id>
+                                <SWITCH_TN_INQ_RESP>
+                                    <__id TYPE="LONG">5001</__id>
+                                </SWITCH_TN_INQ_RESP>
+                                <EXCEPTION>
+                                    <__id TYPE="LONG">9999</__id>
+                                </EXCEPTION>
+                            </SWITCH_TN_INQ_REQ>
+                            <SWITCH_TN_UPD_REQ>
+                                <__id TYPE="LONG">5010</__id>
+                                <SWITCH_TN_UPD_RESP>
+                                    <__id TYPE="LONG">5011</__id>
+                                </SWITCH_TN_UPD_RESP>
+                                <EXCEPTION>
+                                    <__id TYPE="LONG">9999</__id>
+                                </EXCEPTION>
+                            </SWITCH_TN_UPD_REQ>
+                            <SWITCH_INQ_CKT_REQ>
+                                <__id TYPE="LONG">5050</__id>
+                                <SWITCH_INQ_CKT_RESP>
+                                    <__id TYPE="LONG">5051</__id>
+                                </SWITCH_INQ_CKT_RESP>
+                                <EXCEPTION>
+                                    <__id TYPE="LONG">9999</__id>
+                                </EXCEPTION>
+                            </SWITCH_INQ_CKT_REQ>
+                            <SWITCH_RTN_TN_REQ>
+                                <__id TYPE="LONG">5220</__id>
+                                <SWITCH_RTN_TN_RESP>
+                                    <__id TYPE="LONG">5221</__id>
+                                </SWITCH_RTN_TN_RESP>
+                                <EXCEPTION>
+                                    <__id TYPE="LONG">9999</__id>
+                                </EXCEPTION>
+                            </SWITCH_RTN_TN_REQ>
+                            <SWITCH_SEL_TNE_REQ>
+                                <__id TYPE="LONG">5210</__id>
+                                <SWITCH_SEL_TNE_RESP>
+                                    <__id TYPE="LONG">5211</__id>
+                                </SWITCH_SEL_TNE_RESP>
+                                <EXCEPTION>
+                                    <__id TYPE="LONG">9999</__id>
+                                </EXCEPTION>
+                            </SWITCH_SEL_TNE_REQ>
+                            <SWITCH_SEL_TN_REQ>
+                                <__id TYPE="LONG">5200</__id>
+                                <SWITCH_SEL_TN_RESP>
+                                    <__id TYPE="LONG">5201</__id>
+                                </SWITCH_SEL_TN_RESP>
+                                <EXCEPTION>
+                                    <__id TYPE="LONG">9999</__id>
+                                </EXCEPTION>
+                            </SWITCH_SEL_TN_REQ>
+                            <SWITCH_INQ_NTU_REQ>
+                                <__id TYPE="LONG">5250</__id>
+                                <SWITCH_INQ_NTU_RESP>
+                                    <__id TYPE="LONG">5251</__id>
+                                </SWITCH_INQ_NTU_RESP>
+                                <EXCEPTION>
+                                    <__id TYPE="LONG">9999</__id>
+                                </EXCEPTION>
+                            </SWITCH_INQ_NTU_REQ>
+                            <SWITCH_WSI_NTU_REQ>
+                                <__id TYPE="LONG">5170</__id>
+                                <SWITCH_WSI_NTU_RESP>
+                                    <__id TYPE="LONG">5171</__id>
+                                </SWITCH_WSI_NTU_RESP>
+                                <EXCEPTION>
+                                    <__id TYPE="LONG">9999</__id>
+                                </EXCEPTION>
+                            </SWITCH_WSI_NTU_REQ>
+                        </events>
+                    </profile>
+                </protocol>
+            </commHandle>
+        </EventList>
+        <accept>
+            <stream>
+                <MTCPDriver>
+                    <Attach TYPE="STRING"></Attach>
+                </MTCPDriver>
+            </stream>
+            <protocol>
+                <name TYPE="STRING">DG3X</name>
+            </protocol>
+        </accept>
+        <listen>
+            <transport TYPE="STRING">MTCPAcceptor</transport>
+            <stream>
+                <MTCPAcceptor>
+                    <Listen>
+                        <LocalAddress TYPE="STRING">127.0.0.1:80</LocalAddress>
+                        <Family TYPE="LONG">2</Family>
+                    </Listen>
+                </MTCPAcceptor>
+            </stream>
+            <protocol>
+                <name TYPE="STRING">DG3X</name>
+            </protocol>
+        </listen>
+    </propertyList>
+</vicuna>

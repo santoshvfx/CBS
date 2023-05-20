@@ -1,0 +1,34 @@
+#Error Code,Error Text to match,RM Error Tag,Description,Origin,Severity,BusinessRule,SM BIS Error Name,RM Error Name
+#SM-InvalidData-00001,null,RM-SystemFailure-00683,,SM,1,0,ERR_SM_GWS_ERR_CIE_ERROR,ERR_RM_SM_CSI_FOR_AIT
+#SM-BusinessViolation-00112,null,N/A,BTN is not an active account.,SM,0,1,ERR_SM_ACCOUNT_NOT_ACTIVE,N/A
+SM-BusinessViolation-00001,null,RM-BusinessViolation-00001,Scheduled System Downtime,SM,0,0,ERR-SM_SYSTEM_DOWNTIME,ERR_RM_SYSTEM_OFFLINE
+SM-NotImplemented-00114,null,RM-NotImplemented-00082,The requested business has not been implemented yet.,SM,1,0,ERR_SM_BUSINESS_NOT_IMPLEMENTED,ERR_RM_OPERATION_NOT_IMPLEMENTED
+#SM-InvalidData-00115,null,RM-SystemFailure-00683,Input data is in the incorrect format.,SM,1,0,ERR_SM_INVALID_INPUT,ERR_RM_SM_CSI_FOR_AIT
+SM-InvalidData-00116,null,RM-InvalidData-00169,InvalidData: com.sbc.eia.idl.types_2_0_0.ObjectHandle:aServiceHandle <%TAG=TN%s>,SM,1,0,ERR_SM_NUMERIC_TN,ERR_RM_INVALID_SERVICE_HANDLE
+#SM-InvalidData-00117,null,RM-SystemFailure-00683,Required field cannot be null,SM,1,0,ERR_SM_NULL_INPUT,ERR_RM_SM_CSI_FOR_AIT
+#SM-SystemFailure-00207,null,RM-SystemFailure-00683,Unexpected Data Found in the response from core system ,SM,1,0,ERR_SM_UNEXPECTED_RESPONSE_DATA,ERR_RM_SM_CSI_FOR_AIT
+#SM-SystemFailure-00234,null,RM-SystemFailure-00683,Address Handler exception,SM,1,0,ERR_SM_ADDRESS_HANDLER,ERR_RM_SM_CSI_FOR_AIT
+#SM-BusinessViolation-00235,null,RM-SystemFailure-00683,Request returns more data than allowed by the business.,SM,1,0,ERR_SM_MAX_RETURN_SIZE_EXCEEDED,ERR_RM_SM_CSI_FOR_AIT
+#SM-DataNotFound-00236,null,N/A,No data found for this request.,SM,0,1,ERR_SM_DATA_NOT_FOUND,N/A
+#SM-SystemFailure-00237,null,RM-SystemFailure-00683,Exception thrown from HostLookup: <%s>,SM,1,0,ERR_SM_HOSTLOOKUP,ERR_RM_SM_CSI_FOR_AIT
+#SM-SystemFailure-00238,null,RM-SystemFailure-00683,An exception was thrown in the <Interface system name> system: <message from interface system>,SM,0,0,ERR_SM_INTERFACE_ERROR,ERR_RM_SM_CSI_FOR_AIT
+#SM-SystemFailure-00247,null,RM-SystemFailure-00683,System failure in CP01 service,SM,0,0,ERR_SM_CP01_SERVICE_ERROR,ERR_RM_SM_CSI_FOR_AIT
+#SM-SystemFailure-00248,null,RM-SystemFailure-00683,System failure in SAM service. ,SM,0,0,ERR_SM_SAM_PROCESSING_ERROR,ERR_RM_SM_CSI_FOR_AIT
+#SM-SystemFailure-00249,null,RM-SystemFailure-00683,System failure in ACIS. ,SM,0,0,ERR_SM_ACIS_EDIT_ERROR,ERR_RM_SM_CSI_FOR_AIT
+#SM-SystemFailure-00250,null,RM-SystemFailure-00683,System failure in ACIS. ,SM,0,0,ERR_SM_ACIS_IMS_ERROR,ERR_RM_SM_CSI_FOR_AIT
+#SM-SystemFailure-00251,null,RM-SystemFailure-00683,DB failure in ACIS. ,SM,0,0,ERR_SM_ACIS_DB_ERROR,ERR_RM_SM_CSI_FOR_AIT
+SM-SystemFailure-00001,null,RM-SystemFailure-00001,Timeout occured in legacy system,SM,0,0,ERR_SM_INTERFACE_TIMEOUT,ERR_RM_TIMEOUT
+SM-InvalidData-00383,null,RM-InvalidData-00403,MissingData: com.sbc.eia.idl.types_2_0_0.ObjectHandle:aServiceHandle,SM,1,0,ERR_SM_MISSING_BILLING_ACCOUNT_HANDLE ,ERR_RM_MISSING_SERVICE_HANDLE
+SM-InvalidData-00384,null,RM-InvalidData-00403,MissingData: com.sbc.eia.idl.types_2_0_0.ObjectHandle:aServiceHandle,SM,1,0,ERR_SM_MISSING_SERVICE_HANDLE ,ERR_RM_MISSING_SERVICE_HANDLE
+SM-InvalidData-00385,null,RM-InvalidData-00169,InvalidData: com.sbc.eia.idl.types_2_0_0.ObjectHandle:aServiceHandle <%TAG=TN%s>,SM,1,0,ERR_SM_INVALID_SIZE_BILLING_ACCOUNT_HANDLE ,ERR_RM_INVALID_SERVICE_HANDLE
+SM-InvalidData-00386,null,RM-InvalidData-00169,InvalidData: com.sbc.eia.idl.types_2_0_0.ObjectHandle:aServiceHandle <%TAG=TN%s>,SM,1,0,ERR_SM_INVALID_SIZE_SERVICE_HANDLE ,ERR_RM_INVALID_SERVICE_HANDLE
+SM-InvalidData-00387,null,RM-InvalidData-00169,InvalidData: com.sbc.eia.idl.types_2_0_0.ObjectHandle:aServiceHandle <%TAG=TN%s>,SM,1,0,ERR_SM_INVALID_FORMAT_BILLING_ACCOUNT ,ERR_RM_INVALID_SERVICE_HANDLE
+SM-InvalidData-00388,null,RM-InvalidData-00169,InvalidData: com.sbc.eia.idl.types_2_0_0.ObjectHandle:aServiceHandle <%TAG=TN%s>,SM,1,0,ERR_SM_INVALID_FORMAT_SERVICE ,ERR_RM_INVALID_SERVICE_HANDLE
+SM-InvalidData-00117,null,RM-InvalidData-00517,Missing Required Field,SM,1,0,ERR_SM_NULL_INPUT,ERR_RM_MISSING_APPLICATION
+#SM-SystemFailure-00624,null,RM-SystemFailure-00683,Communication failure with the CP01 Corba service. ,SM,1,0,ERR_SM_AIT_CP01_COMM_FAILURE ,ERR_RM_SM_CSI_FOR_AIT
+#SM-DataNotFound-00681,null,RM-SystemFailure-00683,SAGA not found on database tables. ,SM,1,0,ERR_SM_SAGA_NOT_FOUND ,ERR_RM_SM_CSI_FOR_AIT
+#SM-SystemFailure-00682,null,RM-SystemFailure-00683,A failure occured while attempting to access database. ,SM,0,0,ERR_SM_SQL_EXCEPTION_ERROR ,ERR_RM_SM_CSI_FOR_AIT
+SM-SystemFailure-00685,null,RM-BusinessViolation-00001,PM Not Available ,SM,0,0,ERR_SM_PM_NOT_AVAILABLE ,ERR_RM_SYSTEM_OFFLINE
+#SM-SystemFailure-99999,null,RM-SystemFailure-00683,SM System Error.,SM,0,0,ERR_SM_UNEXPECTED_ERROR ,ERR_RM_SM_CSI_FOR_AIT
+#default rule,,,,,,,,
+null,null,RM-SystemFailure-00683,SM System Error.,SM,0,0,ERR_SM_UNEXPECTED_ERROR ,ERR_RM_SM_CSI_FOR_AIT

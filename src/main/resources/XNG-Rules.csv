@@ -1,0 +1,9 @@
+#XnG Error Code,Error Description,RM-Error Code,Description,Origin,Severity,Business Rule,BIS Error Name,,,,,
+7013,null,RM-BusinessViolation-03459,BusinessViolation- Exception from XnG RC,XnG RC,0,0,ERR_RM_GRANITE_BUSINESS_VIOLATION,,,,,
+7012,null,RM-InvalidData-03458,Missing required data- Exception from XnG RC,XnG RC,0,0,ERR_RM_GRANITE_MISSING_DATA,,,,,
+7011,null,RM-BusinessViolation-03459,BusinessViolation- Exception from XnG RC,XnG RC,0,0,ERR_RM_GRANITE_BUSINESS_VIOLATION,,,,,
+7999,null,RM-SystemFailure-03460,System Failure- Exception from XnG RC,XnG RC,0,0,ERR_RM_GRANITE_EXCEPTION,,,,,
+JAXB-99999,null,RM-SystemFailure-03530,System Failure- rm bis to xng rc xml encoder exception,RM BIS,0,0,ERR_RM_CREATE_EMBUS_SERVICE_REQUEST,,,,,rm bis to xng rc xml encoder exception
+null,[Tt][Ii][Mm][Ee][Dd]*[ ]*[Oo][Uu][Tt],RM-SystemFailure-00001,Timeout- Exception from XnG RC,XnG RC,0,0,ERR_RM_TIMEOUT,,,,,
+DEFAULT:1,null,RM-SystemFailure-03282,Error in XnG RC Service access,XnG RC,0,0,ERR_RM_XNG_EXCEPTION,,,,,
+null,null,RM-SystemFailure-03282,System Failure- Exception from XnG RC,XnG RC,0,0,ERR_RM_XNG_EXCEPTION,,,,,

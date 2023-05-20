@@ -1,0 +1,119 @@
+# @(#)testclient.properties	1.0 00/05/17
+
+#
+# Logger-specific properties follow
+#
+CLASSNAME=com.sbc.eia.bis.facades.testing.rm
+LOGFILE_PATH=RMClient.lssat.log
+
+#BIS Provider URL
+BIS_PROVIDER_URL=corbaloc::bislssat1.test.att.com:11000
+
+BIS_HOME=cell/clusters/RM21.60Cluster/RMHome-21.60
+
+# Test Type
+#TARGET_TYPE=OBJECT
+TARGET_TYPE=EJB
+#TARGET_TYPE=PROXY
+#TARGET_TYPE=SOAP
+#TARGET_TYPE=SOAPHTTP
+#TARGET_TYPE=MDB
+#TARGET_TYPE=JMX
+
+THREAD_COUNT=1
+CYCLE_COUNT=1
+SLEEP_TIME=0
+
+# for OBJECT
+BIS_PROPERTIES_PATH=c:\\appl\\eia\\rm\\properties\\rm.properties
+
+# for Vicuna
+# Vicuna Home
+VICUNA_SERVICE_CONFIG_DIR=c:\\appl\\eia\\rm\\properties
+VICUNA_XML_FILE=c:\\vicuna\\etc\\vicunalite.xml
+# Vicuna services APPLDATA
+APPLDATA=
+GWSVCS_CLNTUUID=RMBIS
+
+#RM PROXY APPLDATA
+RMPROXY_APPLDATA=PROD
+
+#MDB Test client properties
+RM_MDB_TEST_CLIENT_CONFIG_FILE_NAME=MDBTestClient.properties
+
+#
+#RMSoacQueue embus service wrapper properties
+#
+RM_TEST_CLIENT_CONFIG_FILE_NAME=test-client-config.xml
+RM_TEST_ENVIRONMENT_NAME=RM_TEST_SOAC
+OSS_PUBLIC_KEY=bossApplData1
+
+# SOAFI PROXY properties
+SOAFI_LDAP=ldap://emlclt01.sbc.com:4299/t=jms,c=us
+USER_NAME=M18846t
+PASSWORD=VVADt>8\u0008/\u0002E+\u007F/\u0005"N
+CONNECTION_FACTORY=cn=rmcltQCF,ou=21_60,ou=rm,o=bis
+REQUESET_QUEUE=cn=resourceManagement,ou=21_60,ou=rm,o=bis
+#REPLY_TO_QUEUE=temp
+#WAIT_TIME=120000
+
+# SOAP/HTTP
+LOGGING_KEY=SM-NONE
+SERVICE_LOCATOR=http://mwsoapproxynon271sat.sbc.com/Rm21.60SoapHttpWeb/servlet/SoapAdapterServlet
+
+#JMX
+#LOOKUP_TYPE= "cluster" or "server" or "direct"
+#PORT=the value of SOAP_CONNECTOR_ADDRESS
+LOOKUP_TYPE=server
+PORT=8882
+MBEAN_IDENTIFIER=WebSphere:mbeanIdentifier=BISTestMBean,*
+JMX_TIMEOUT=60
+SERVER_NAME=server1
+
+#DTD_URL=http://cscim1.sbc.com/eia/BISFacade/DTD/v1.4/
+
+# BIS_CONTEXT fields
+#BIS_CONTEXT_Application=LSPWEST
+BIS_CONTEXT_Application=00.00
+BIS_CONTEXT_CustomerName=ccma
+BIS_CONTEXT_UserID=sl2917
+BIS_CONTEXT_Password=none_ya
+BIS_CONTEXT_LoggingInformation=huh
+#BIS_CONTEXT_ServiceCenter=IL
+
+#
+# TestCase Information
+# Each test case is specified in the format:
+#	TESTCASEn=TEST_CASE_CLASS_NAME|test-case-specific-pipe-delimited-parameter-list
+# TEST_CASE_COUNT should be the same number as 'n' in TESTCASEn.
+#
+TEST_CASE_COUNT=23
+
+
+#
+# Used by Lead Free NetP group ActivateResourcesForDSLService
+#
+#	parm list = ActivateResourcesForDSLService|ActivationType|value|ProvisioningType|value|ServiceLocation|value|ServiceProviderId|value|CircuitId|value|ProviderTrunk|value|end| 
+#
+TESTCASE16=ActivateResourcesForDSLService|BisContext|Application|CPSOS|BusinessUnit|SbcDataServices|end|ActivationType|NewVC|end|ProvisioningType|RT|end|ServiceLocation|FieldedAddress|null|null|null|null|null|null|null|null|null|null|null|CT|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|LATA|920|CLLI|WNDSCT00|end|end|ServiceProviderId|aolneisp|end|CircuitId|203-302-2000|end|ProviderTrunk||||end|
+TESTCASE17=ActivateResourcesForDSLService|BisContext|Application|CPSOS|BusinessUnit|SbcDataServices|end|ActivationType|ManualNewVC|end|ProvisioningType|RT|end|ServiceLocation|FieldedAddress|null|null|null|null|null|null|null|null|null|null|null|CT|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|LATA|92|CLLI|WHFRCT01|end|end|ServiceProviderId|aolneisp|end|CircuitId|203-302-2001|end|ProviderTrunk|9|55|31/HFGJ/000086|end|
+
+# ModifyResourcesForDSLService
+#	parm list = ModifyResourcesForDSLService|ModificationType|value|RequestType|value|ProvisioningType|value|ServiceLocation|value|ServiceProviderId|value|CircuitId|value|NewCircuitId|value|ProviderTrunk|value|end|
+#
+TESTCASE18=ModifyResourcesForDSLService|BisContext|Application|CPSOS|BusinessUnit|SbcDataServices|end|ModificationType|IspChange|end|RequestType|null|end|ProvisioningType|CO|end|ServiceLocation|FieldedAddress|null|null|null|null|null|null|null|null|null|null|null|CT|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|LATA|920|CLLI|NWBRCT00|end|end|ServiceProviderId|aol_isp|end|CircuitId|860-826-1814|end|NewCircuitId||end|ProviderTrunk|2|44|31/HCGJ/000086|end|
+TESTCASE19=ModifyResourcesForDSLService|BisContext|Application|CPSOS|BusinessUnit|SbcDataServices|end|ModificationType|InitiateMove|end|RequestType|Manual|end|ProvisioningType|CO|end|ServiceLocation|FieldedAddress|null|null|null|null|null|null|null|null|null|null|null|CT|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|LATA|920|CLLI|WHFRCT02|end|end|ServiceProviderId|moegacommisp|end|CircuitId|860-276-3875|end|NewCircuitId|801-822-0000|end|ProviderTrunk|2|104|31/HFFJ/000044|end|
+
+# RetrieveResourcesForDSLService
+#
+# Parm list = RetrieveResourcesForDSLService|value|aQueryType|value|aServiceLocation|value|aCircuitId|value|end|
+#
+TESTCASE20=RetrieveResourcesForDSLService|BisContext|Application|CPSOS|BusinessUnit|SbcDataServices|end|QueryType|queryDslCircuit|end|ServiceLocation|FieldedAddress|null|null|null|null|null|null|null|null|null|null|null|CT|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|LATA|920|CLLI|WNDSCT00|end|end|CircuitId|860-688-1294|end|
+TESTCASE21=RetrieveResourcesForDSLService|BisContext|Application|CPSOS|BusinessUnit|SbcDataServices|end|QueryType|queryDslCircuit|end|ServiceLocation|FieldedAddress|null|null|null|null|null|null|null|null|null|null|null|CT|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|LATA|920|CLLI|DNBRCT00|end|end|CircuitId|203-205-0067|end|
+
+# RetrieveResourceStatusForDSLService
+#
+#	Parm list = RetrieveResourceStatusForDSLService|aQueryType|value|aProvisioningType|value|aServiceLocation|value|aServiceProviderId|value|aCircuitId|value|aNewCircuitId|value|aProviderTrunk|value|end|
+#
+TESTCASE22=RetrieveResourceStatusForDSLService|BisContext|Application|CPSOS|BusinessUnit|SbcDataServices|end|QueryType|DisconnectVc|end|ProvisioningType|co|end|ServiceLocation|FieldedAddress|null|null|null|null|null|null|null|null|null|null|null|CT|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|LATA|920|CLLI|WHFRCT01|end|end|ServiceProviderId|aolneisp|end|CircuitId|203-205-0155|end|NewCircuitId| |end|ProviderTrunk|9|70|31/HFGJ/000086|end|
+TESTCASE23=RetrieveResourceStatusForDSLService|BisContext|Application|CPSOS|BusinessUnit|SbcDataServices|end|QueryType|DisconnectVc|end|ProvisioningType|co|end|ServiceLocation|FieldedAddress|null|null|null|null|null|null|null|null|null|null|null|CT|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|null|LATA|920|CLLI|WHFRCT01|end|end|ServiceProviderId|aolneisp|end|CircuitId|203-205-0112|end|NewCircuitId| |end|ProviderTrunk|9|70|31/HFGJ/000086|end|

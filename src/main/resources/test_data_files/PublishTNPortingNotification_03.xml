@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<m1:OpIdl3_3Client.OrderPathSubscriptionNotifications.NotifySvCreateAck xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:m1="http://www.evolving.com/OrderPath/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<regID>0009</regID>
+	<initSpid>4000</initSpid>
+	<tnRng>
+		<tnValue>2487797081</tnValue>
+		<endStation></endStation>
+	</tnRng>
+	<vectSvID>
+		<item>3424</item>
+	</vectSvID>
+	<dueDateTime>20060810000000.GMT</dueDateTime>
+	<orderNum>
+		<ordTyp>C</ordTyp>
+		<serNum>08100020</serNum>
+		<supNum>B</supNum>
+	</orderNum>
+</m1:OpIdl3_3Client.OrderPathSubscriptionNotifications.NotifySvCreateAck>
